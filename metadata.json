@@ -1,0 +1,19 @@
+{
+  "title": "Fundraising App",
+  "description": "A simple crowdfunding app, featuring a single page to display a campaign, and functionality to handle contributions, refunds, and withdrawal by the fundraiser.",
+  "type": "dapp",
+  "framework": "Clarity, Next.js, React.js",
+  "demoUrl": "https://demo.fundraising-dapp.platform.hiro.so",
+  "useCase": "Crowdfunding",
+  "complexity": "Intermediate",
+  "tags": [
+    "fundraising",
+    "crowdfunding",
+    "sbtc",
+    "web3",
+    "smart-contract",
+    "stacks",
+    "clarity",
+    "next.js"
+  ]
+}

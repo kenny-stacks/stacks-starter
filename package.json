@@ -1,0 +1,8 @@
+{
+  "name": "fundraising-dapp",
+  "private": true,
+  "workspaces": [
+    "clarity",
+    "front-end"
+  ]
+}

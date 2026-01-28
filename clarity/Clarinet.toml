@@ -1,0 +1,20 @@
+[project]
+name = 'clarity'
+description = ''
+authors = []
+telemetry = false
+cache_dir = './.cache'
+
+[[project.requirements]]
+contract_id = 'SM3VDXK3WZZSA84XXFKAFAF15NNZX32CTSG82JFQ4.sbtc-token'
+
+[[project.requirements]]
+contract_id = 'SM3VDXK3WZZSA84XXFKAFAF15NNZX32CTSG82JFQ4.sbtc-deposit'
+[contracts.fundraising]
+
+path = 'contracts/fundraising.clar'
+clarity_version = 3
+epoch = 3.0
+
+[repl.analysis]
+passes = []

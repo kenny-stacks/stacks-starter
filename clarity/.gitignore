@@ -1,0 +1,15 @@
+**/settings/Mainnet.toml
+**/settings/Testnet.toml
+.cache/**
+!.cache/
+!.cache/requirements/
+!.cache/requirements/**
+history.txt
+
+logs
+*.log
+npm-debug.log*
+coverage
+*.info
+costs-reports.json
+node_modules
