@@ -25,15 +25,18 @@ Decimal phases appear between their surrounding integers in numeric order.
 **Depends on**: Nothing (first phase)
 **Requirements**: FOUN-01, FOUN-02, FOUN-03, FOUN-04, DEVX-05, DEVX-06
 **Success Criteria** (what must be TRUE):
-  1. Developer runs `npm install` successfully (with documented --legacy-peer-deps flag)
-  2. Developer runs `npm run dev` and sees app start on localhost with Tailwind styles applied
+  1. Developer runs `pnpm install` successfully
+  2. Developer runs `pnpm dev` and sees app start on localhost with Tailwind styles applied
   3. Developer sees dark mode toggle work without hydration flash
-  4. Developer runs `npm run test` and sees contract tests execute via Vitest
+  4. Developer runs `pnpm test` and sees contract tests execute via Vitest
   5. ESLint catches Tailwind dynamic class construction errors during development
-**Plans**: TBD
+**Plans:** 4 plans
 
 Plans:
-- [ ] 01-01: TBD during planning
+- [ ] 01-01-PLAN.md — pnpm migration (remove npm, install pnpm)
+- [ ] 01-02-PLAN.md — Tailwind CSS + shadcn/ui foundation
+- [ ] 01-03-PLAN.md — Dev tooling (ESLint Tailwind plugin, Prettier, Vitest)
+- [ ] 01-04-PLAN.md — Dark mode + Chakra UI removal
 
 ### Phase 2: UI Component Library
 **Goal**: Developers have working shadcn components and feature UI ready for wallet/contract integration
@@ -103,7 +106,7 @@ Phases execute in numeric order: 1 → 2 → 3 → 4 → 5
 
 | Phase | Plans Complete | Status | Completed |
 |-------|----------------|--------|-----------|
-| 1. Foundation & Developer Setup | 0/? | Not started | - |
+| 1. Foundation & Developer Setup | 0/4 | Planned | - |
 | 2. UI Component Library | 0/? | Not started | - |
 | 3. Wallet Integration | 0/? | Not started | - |
 | 4. Smart Contract Integration | 0/? | Not started | - |
