@@ -27,3 +27,11 @@ export const SBTC_CONTRACT = {
 export const getContractIdentifier = () => {
   return `${FUNDRAISING_CONTRACT.address}.${FUNDRAISING_CONTRACT.name}`;
 };
+
+// Counter contract uses same deployer as fundraising (deployer wallet on devnet)
+const COUNTER_CONTRACT_NAME = "counter";
+
+export const COUNTER_CONTRACT = {
+  address: DEPLOYER_ADDRESS,
+  name: COUNTER_CONTRACT_NAME,
+} as const;
