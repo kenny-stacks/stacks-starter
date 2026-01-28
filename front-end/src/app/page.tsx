@@ -4,9 +4,11 @@ import { Navbar } from "@/components/navbar"
 import { CounterDisplay } from "@/components/counter-display"
 import { NetworkIndicator } from "@/components/network-indicator"
 import { useWallet } from "@/components/providers/wallet-provider"
+import { useCounterValue } from "@/hooks/counterQueries"
 
 export default function Home() {
   const { network } = useWallet()
+  const { data: counterValue, isLoading, isError } = useCounterValue()
 
   return (
     <div className="min-h-screen bg-background">
@@ -17,7 +19,15 @@ export default function Home() {
             <span className="text-sm text-muted-foreground">Network:</span>
             <NetworkIndicator network={network} />
           </div>
-          <CounterDisplay value={0} />
+          <CounterDisplay
+            value={isError ? 0 : counterValue}
+            isLoading={isLoading}
+          />
+          {isError && (
+            <p className="text-sm text-destructive">
+              Failed to fetch counter value. Is devnet running?
+            </p>
+          )}
         </div>
       </main>
     </div>
