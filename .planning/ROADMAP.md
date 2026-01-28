@@ -48,10 +48,12 @@ Plans:
   3. Network indicator displays current network (devnet/testnet/mainnet)
   4. All 8 shadcn primitives (Button, Card, Input, Dialog, Dropdown Menu, Sonner, Badge, Skeleton) render correctly
   5. UI adapts to dark/light mode using CSS variables
-**Plans**: TBD
+**Plans:** 3 plans
 
 Plans:
-- [ ] 02-01: TBD during planning
+- [ ] 02-01-PLAN.md — Install shadcn/ui primitives and configure Toaster
+- [ ] 02-02-PLAN.md — Create feature components (Navbar, Counter Display, Network Indicator)
+- [ ] 02-03-PLAN.md — Page integration and visual verification
 
 ### Phase 3: Wallet Integration
 **Goal**: Developers can connect wallets (Hiro extension or devnet selector) and manage connection state
@@ -106,8 +108,8 @@ Phases execute in numeric order: 1 → 2 → 3 → 4 → 5
 
 | Phase | Plans Complete | Status | Completed |
 |-------|----------------|--------|-----------|
-| 1. Foundation & Developer Setup | 4/4 | ✓ Complete | 2026-01-28 |
-| 2. UI Component Library | 0/? | Not started | - |
+| 1. Foundation & Developer Setup | 4/4 | Complete | 2026-01-28 |
+| 2. UI Component Library | 0/3 | Ready | - |
 | 3. Wallet Integration | 0/? | Not started | - |
 | 4. Smart Contract Integration | 0/? | Not started | - |
 | 5. Documentation & Polish | 0/? | Not started | - |
