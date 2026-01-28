@@ -14,6 +14,9 @@
     "test:coverage": "vitest run --coverage"
   },
   "dependencies": {
+    "@radix-ui/react-dialog": "^1.1.15",
+    "@radix-ui/react-dropdown-menu": "^2.1.16",
+    "@radix-ui/react-slot": "^1.2.4",
     "@stacks/blockchain-api-client": "^7.2.2",
     "@stacks/connect": "^8.1.9",
     "@stacks/network": "^7.0.2",
@@ -27,6 +30,7 @@
     "react": "^19.0.0",
     "react-dom": "^19.0.0",
     "react-markdown": "^9.0.3",
+    "sonner": "^2.0.7",
     "tailwind-merge": "^3.4.0",
     "timeago.js": "^4.0.2"
   },
