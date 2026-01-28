@@ -112,10 +112,10 @@ Which phases cover which requirements. Updated during roadmap creation.
 | DEVX-06 | Phase 1 | Pending |
 
 **Coverage:**
-- v1 requirements: 22 total
-- Mapped to phases: 22
+- v1 requirements: 23 total
+- Mapped to phases: 23
 - Unmapped: 0 ✓
 
 ---
 *Requirements defined: 2026-01-28*
-*Last updated: 2026-01-28 after research completion*
+*Last updated: 2026-01-28 after roadmap creation*
