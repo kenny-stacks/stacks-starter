@@ -16,10 +16,10 @@ Requirements for initial release. Each maps to roadmap phases.
 
 ### UI Components
 
-- [ ] **UICM-01**: 8 minimal shadcn components installed (Button, Card, Input, Dialog, Dropdown Menu, Sonner, Badge, Skeleton)
-- [ ] **UICM-02**: Navbar component with wallet connection button
-- [ ] **UICM-03**: Counter display component showing current value
-- [ ] **UICM-04**: Network indicator showing current network (devnet/testnet/mainnet)
+- [x] **UICM-01**: 8 minimal shadcn components installed (Button, Card, Input, Dialog, Dropdown Menu, Sonner, Badge, Skeleton)
+- [x] **UICM-02**: Navbar component with wallet connection button
+- [x] **UICM-03**: Counter display component showing current value
+- [x] **UICM-04**: Network indicator showing current network (devnet/testnet/mainnet)
 
 ### Wallet Integration
 
@@ -91,10 +91,10 @@ Which phases cover which requirements. Updated during roadmap creation.
 | FOUN-02 | Phase 1 | Complete |
 | FOUN-03 | Phase 1 | Complete |
 | FOUN-04 | Phase 1 | Complete |
-| UICM-01 | Phase 2 | Pending |
-| UICM-02 | Phase 2 | Pending |
-| UICM-03 | Phase 2 | Pending |
-| UICM-04 | Phase 2 | Pending |
+| UICM-01 | Phase 2 | Complete |
+| UICM-02 | Phase 2 | Complete |
+| UICM-03 | Phase 2 | Complete |
+| UICM-04 | Phase 2 | Complete |
 | WALL-01 | Phase 3 | Pending |
 | WALL-02 | Phase 3 | Pending |
 | WALL-03 | Phase 3 | Pending |
