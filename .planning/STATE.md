@@ -5,7 +5,7 @@
 See: .planning/PROJECT.md (updated 2026-01-28)
 
 **Core value:** Developers can connect a wallet and interact with a smart contract within minutes of cloning
-**Current focus:** Phase 2 Complete - Ready for Phase 3 (Wallet Integration)
+**Current focus:** Phase 3 Complete - Ready for Phase 4 (Smart Contract Integration)
 
 ## Current Position
 

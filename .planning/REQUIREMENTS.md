@@ -23,10 +23,10 @@ Requirements for initial release. Each maps to roadmap phases.
 
 ### Wallet Integration
 
-- [ ] **WALL-01**: Hiro Wallet connection works on testnet/mainnet
-- [ ] **WALL-02**: Devnet wallet selector shows 6 test wallets
-- [ ] **WALL-03**: Wallet context provides address, network, connection state
-- [ ] **WALL-04**: Disconnect functionality works across all networks
+- [x] **WALL-01**: Hiro Wallet connection works on testnet/mainnet
+- [x] **WALL-02**: Devnet wallet selector shows 6 test wallets
+- [x] **WALL-03**: Wallet context provides address, network, connection state
+- [x] **WALL-04**: Disconnect functionality works across all networks
 
 ### Smart Contract
 
@@ -95,10 +95,10 @@ Which phases cover which requirements. Updated during roadmap creation.
 | UICM-02 | Phase 2 | Complete |
 | UICM-03 | Phase 2 | Complete |
 | UICM-04 | Phase 2 | Complete |
-| WALL-01 | Phase 3 | Pending |
-| WALL-02 | Phase 3 | Pending |
-| WALL-03 | Phase 3 | Pending |
-| WALL-04 | Phase 3 | Pending |
+| WALL-01 | Phase 3 | Complete |
+| WALL-02 | Phase 3 | Complete |
+| WALL-03 | Phase 3 | Complete |
+| WALL-04 | Phase 3 | Complete |
 | CONT-01 | Phase 4 | Pending |
 | CONT-02 | Phase 4 | Pending |
 | CONT-03 | Phase 4 | Pending |
