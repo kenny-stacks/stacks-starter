@@ -38,3 +38,84 @@ export const useCounterValue = (): UseQueryResult<number> => {
     retry: 3, // Retry 3 times to handle devnet block 2 delay
   })
 }
+
+export const useIncrementCounter = () => {
+  const { isDevnet, devnetWallet, isConnected } = useWallet()
+  const queryClient = useQueryClient()
+
+  return useMutation({
+    mutationFn: async () => {
+      if (!isConnected) {
+        throw new Error("Wallet not connected")
+      }
+
+      const txOptions = {
+        contractAddress: COUNTER_CONTRACT.address || "",
+        contractName: COUNTER_CONTRACT.name,
+        functionName: "increment",
+        functionArgs: [],
+        postConditionMode: PostConditionMode.Allow,
+      }
+
+      if (isDevnet) {
+        // Devnet: Direct signing without wallet extension
+        return await executeContractCall(txOptions, devnetWallet)
+      } else {
+        // Testnet/Mainnet: Use Leather wallet
+        const result = await openContractCall(txOptions)
+        return { txid: result.txid || "" }
+      }
+    },
+    onSuccess: (data) => {
+      toast.success("Transaction submitted", {
+        description: `TX: ${data.txid.slice(0, 10)}...`,
+      })
+      // Invalidate counter query to trigger refetch
+      queryClient.invalidateQueries({ queryKey: ["counterValue"] })
+    },
+    onError: (error: Error) => {
+      toast.error("Transaction failed", {
+        description: error.message,
+      })
+    },
+  })
+}
+
+export const useDecrementCounter = () => {
+  const { isDevnet, devnetWallet, isConnected } = useWallet()
+  const queryClient = useQueryClient()
+
+  return useMutation({
+    mutationFn: async () => {
+      if (!isConnected) {
+        throw new Error("Wallet not connected")
+      }
+
+      const txOptions = {
+        contractAddress: COUNTER_CONTRACT.address || "",
+        contractName: COUNTER_CONTRACT.name,
+        functionName: "decrement",
+        functionArgs: [],
+        postConditionMode: PostConditionMode.Allow,
+      }
+
+      if (isDevnet) {
+        return await executeContractCall(txOptions, devnetWallet)
+      } else {
+        const result = await openContractCall(txOptions)
+        return { txid: result.txid || "" }
+      }
+    },
+    onSuccess: (data) => {
+      toast.success("Transaction submitted", {
+        description: `TX: ${data.txid.slice(0, 10)}...`,
+      })
+      queryClient.invalidateQueries({ queryKey: ["counterValue"] })
+    },
+    onError: (error: Error) => {
+      toast.error("Transaction failed", {
+        description: error.message,
+      })
+    },
+  })
+}
