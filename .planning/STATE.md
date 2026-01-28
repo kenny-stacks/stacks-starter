@@ -10,28 +10,28 @@ See: .planning/PROJECT.md (updated 2026-01-28)
 ## Current Position
 
 Phase: 1 of 5 (Foundation & Developer Setup)
-Plan: 3 of 4 completed in current phase
-Status: In progress
-Last activity: 2026-01-28 — Completed 01-03-PLAN.md (Developer Tooling: ESLint, Prettier, Vitest)
+Plan: 4 of 4 completed in current phase
+Status: Phase complete
+Last activity: 2026-01-28 — Completed 01-04-PLAN.md (Dark Mode & UI Migration)
 
-Progress: [███░░░░░░░] ~30%
+Progress: [████░░░░░░] ~40%
 
 ## Performance Metrics
 
 **Velocity:**
-- Total plans completed: 3
-- Average duration: 3.8 min
-- Total execution time: 0.19 hours
+- Total plans completed: 4
+- Average duration: 4.2 min
+- Total execution time: 0.28 hours
 
 **By Phase:**
 
 | Phase | Plans | Total | Avg/Plan |
 |-------|-------|-------|----------|
-| 01-foundation-developer-setup | 3 | 11.4min | 3.8min |
+| 01-foundation-developer-setup | 4 | 16.4min | 4.1min |
 
 **Recent Trend:**
-- Last 5 plans: 01-01 (1.7min), 01-02 (4.7min), 01-03 (5.0min)
-- Trend: Phase 1 execution progressing steadily
+- Last 5 plans: 01-01 (1.7min), 01-02 (4.7min), 01-03 (5.0min), 01-04 (5.0min)
+- Trend: Phase 1 complete with consistent execution velocity
 
 *Updated after each plan completion*
 
@@ -53,6 +53,9 @@ Recent decisions affecting current work:
 - **Plan 01-03:** ESLint 9 flat config format adopted (Next.js 15 default, modern standard)
 - **Plan 01-03:** tailwindcss/no-custom-classname rule enabled to catch dynamic class construction
 - **Plan 01-03:** Vitest chosen over Jest (faster, better ESM support)
+- **Plan 01-04:** next-themes chosen for dark mode (handles SSR hydration and system theme detection)
+- **Plan 01-04:** Chakra-dependent components moved to _deprecated-chakra folders for Phase 2 reference
+- **Plan 01-04:** Wallet providers excluded from AppProviders until Phase 3
 
 ### Pending Todos
 
@@ -64,10 +67,16 @@ None yet.
 - ~~Peer dependency conflicts with React 19 + Next.js 15 require `--legacy-peer-deps` flag~~ **RESOLVED:** pnpm handles React 19 peer dependencies natively
 - ~~Tailwind content paths must include shadcn components or production build purges styles~~ **ADDRESSED:** Content paths configured in tailwind.config.ts for src and components directories
 - ~~Dynamic class construction pitfall needs ESLint rule enforcement~~ **RESOLVED:** tailwindcss/no-custom-classname rule active in eslint.config.mjs
+- **PHASE COMPLETE**
+
+**Phase 2:**
+- 9 Chakra components in _deprecated-chakra need shadcn equivalents (Navbar, CampaignDetails, etc.)
+- useTransactionExecuter hook needs Chakra toast replaced with shadcn Toast
 
 **Phase 3:**
 - Stacks Connect modal theming may break after Chakra removal (needs hands-on testing)
-- Provider nesting order critical: ThemeProvider > ConnectProvider > QueryClientProvider
+- Provider nesting order: QueryClientProvider > ThemeProvider > WalletProviders (established in 01-04)
+- HiroWalletProvider and DevnetWalletProvider need integration into AppProviders
 
 **Phase 4:**
 - Existing contract patterns in front-end/src/lib/ must be preserved (contract-utils.ts, stacks-api.ts)
@@ -75,6 +84,8 @@ None yet.
 
 ## Session Continuity
 
-Last session: 2026-01-28 19:51:05 UTC
-Stopped at: Completed 01-03-PLAN.md (Developer Tooling: ESLint, Prettier, Vitest)
+Last session: 2026-01-28 19:59:26 UTC
+Stopped at: Completed 01-04-PLAN.md (Dark Mode & UI Migration) - Phase 1 complete
 Resume file: None
+
+**Phase 1 Complete:** Foundation established - pnpm, Tailwind, shadcn, tooling, dark mode all functional
