@@ -12,7 +12,7 @@ Transform the existing Stacks fundraising dApp into a minimal developer starter 
 
 Decimal phases appear between their surrounding integers in numeric order.
 
-- [ ] **Phase 1: Foundation & Developer Setup** - Tailwind/shadcn infrastructure, dark mode, dev tooling
+- [x] **Phase 1: Foundation & Developer Setup** - Tailwind/shadcn infrastructure, dark mode, dev tooling
 - [ ] **Phase 2: UI Component Library** - shadcn components and feature-specific UI
 - [ ] **Phase 3: Wallet Integration** - Hiro wallet + devnet selector with connection management
 - [ ] **Phase 4: Smart Contract Integration** - Counter contract with read/write operations
@@ -33,10 +33,10 @@ Decimal phases appear between their surrounding integers in numeric order.
 **Plans:** 4 plans
 
 Plans:
-- [ ] 01-01-PLAN.md — pnpm migration (remove npm, install pnpm)
-- [ ] 01-02-PLAN.md — Tailwind CSS + shadcn/ui foundation
-- [ ] 01-03-PLAN.md — Dev tooling (ESLint Tailwind plugin, Prettier, Vitest)
-- [ ] 01-04-PLAN.md — Dark mode + Chakra UI removal
+- [x] 01-01-PLAN.md — pnpm migration (remove npm, install pnpm)
+- [x] 01-02-PLAN.md — Tailwind CSS + shadcn/ui foundation
+- [x] 01-03-PLAN.md — Dev tooling (ESLint Tailwind plugin, Prettier, Vitest)
+- [x] 01-04-PLAN.md — Dark mode + Chakra UI removal
 
 ### Phase 2: UI Component Library
 **Goal**: Developers have working shadcn components and feature UI ready for wallet/contract integration
@@ -106,7 +106,7 @@ Phases execute in numeric order: 1 → 2 → 3 → 4 → 5
 
 | Phase | Plans Complete | Status | Completed |
 |-------|----------------|--------|-----------|
-| 1. Foundation & Developer Setup | 0/4 | Planned | - |
+| 1. Foundation & Developer Setup | 4/4 | ✓ Complete | 2026-01-28 |
 | 2. UI Component Library | 0/? | Not started | - |
 | 3. Wallet Integration | 0/? | Not started | - |
 | 4. Smart Contract Integration | 0/? | Not started | - |

@@ -9,10 +9,10 @@ Requirements for initial release. Each maps to roadmap phases.
 
 ### Foundation
 
-- [ ] **FOUN-01**: Tailwind CSS v3 installed and configured with proper content paths
-- [ ] **FOUN-02**: shadcn/ui initialized with CSS variables approach
-- [ ] **FOUN-03**: ESLint 9 flat config with Tailwind plugin
-- [ ] **FOUN-04**: Dark mode working without hydration flash
+- [x] **FOUN-01**: Tailwind CSS v3 installed and configured with proper content paths
+- [x] **FOUN-02**: shadcn/ui initialized with CSS variables approach
+- [x] **FOUN-03**: ESLint 9 flat config with Tailwind plugin
+- [x] **FOUN-04**: Dark mode working without hydration flash
 
 ### UI Components
 
@@ -42,8 +42,8 @@ Requirements for initial release. Each maps to roadmap phases.
 - [ ] **DEVX-02**: docs/getting-started.md with detailed setup walkthrough
 - [ ] **DEVX-03**: docs/patterns.md explaining wallet, contract, and query patterns
 - [ ] **DEVX-04**: docs/extending.md guide for adding new contracts and features
-- [ ] **DEVX-05**: Working `npm run dev` starts app connected to devnet
-- [ ] **DEVX-06**: Working `npm run test` runs contract tests via Vitest
+- [x] **DEVX-05**: Working `pnpm dev` starts app connected to devnet
+- [x] **DEVX-06**: Working `pnpm test` runs contract tests via Vitest
 
 ## v2 Requirements
 
@@ -87,10 +87,10 @@ Which phases cover which requirements. Updated during roadmap creation.
 
 | Requirement | Phase | Status |
 |-------------|-------|--------|
-| FOUN-01 | Phase 1 | Pending |
-| FOUN-02 | Phase 1 | Pending |
-| FOUN-03 | Phase 1 | Pending |
-| FOUN-04 | Phase 1 | Pending |
+| FOUN-01 | Phase 1 | Complete |
+| FOUN-02 | Phase 1 | Complete |
+| FOUN-03 | Phase 1 | Complete |
+| FOUN-04 | Phase 1 | Complete |
 | UICM-01 | Phase 2 | Pending |
 | UICM-02 | Phase 2 | Pending |
 | UICM-03 | Phase 2 | Pending |
@@ -108,8 +108,8 @@ Which phases cover which requirements. Updated during roadmap creation.
 | DEVX-02 | Phase 5 | Pending |
 | DEVX-03 | Phase 5 | Pending |
 | DEVX-04 | Phase 5 | Pending |
-| DEVX-05 | Phase 1 | Pending |
-| DEVX-06 | Phase 1 | Pending |
+| DEVX-05 | Phase 1 | Complete |
+| DEVX-06 | Phase 1 | Complete |
 
 **Coverage:**
 - v1 requirements: 23 total
