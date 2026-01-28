@@ -14,7 +14,7 @@ Decimal phases appear between their surrounding integers in numeric order.
 
 - [x] **Phase 1: Foundation & Developer Setup** - Tailwind/shadcn infrastructure, dark mode, dev tooling
 - [x] **Phase 2: UI Component Library** - shadcn components and feature-specific UI
-- [ ] **Phase 3: Wallet Integration** - Hiro wallet + devnet selector with connection management
+- [ ] **Phase 3: Wallet Integration** - Leather wallet + devnet selector with connection management
 - [ ] **Phase 4: Smart Contract Integration** - Counter contract with read/write operations
 - [ ] **Phase 5: Documentation & Polish** - Comprehensive developer documentation
 
@@ -56,19 +56,21 @@ Plans:
 - [x] 02-03-PLAN.md — Page integration and visual verification
 
 ### Phase 3: Wallet Integration
-**Goal**: Developers can connect wallets (Hiro extension or devnet selector) and manage connection state
+**Goal**: Developers can connect wallets (Leather extension or devnet selector) and manage connection state
 **Depends on**: Phase 2
 **Requirements**: WALL-01, WALL-02, WALL-03, WALL-04
 **Success Criteria** (what must be TRUE):
-  1. Developer clicks "Connect Wallet" and sees Hiro extension prompt (testnet/mainnet)
+  1. Developer clicks "Connect Wallet" and sees Leather extension prompt (testnet/mainnet)
   2. Developer on devnet sees wallet selector with 6 test wallets
   3. Developer selects wallet and sees address displayed in navbar
   4. Wallet context provides current address, network, and connection state to child components
   5. Developer clicks "Disconnect" and wallet connection clears
-**Plans**: TBD
+**Plans:** 3 plans
 
 Plans:
-- [ ] 03-01: TBD during planning
+- [ ] 03-01-PLAN.md — Wallet context foundation (WalletProvider, AppProviders integration)
+- [ ] 03-02-PLAN.md — Wallet UI components (DevnetWalletSelector, ConnectButton, WalletDropdown)
+- [ ] 03-03-PLAN.md — Navbar integration and visual verification
 
 ### Phase 4: Smart Contract Integration
 **Goal**: Developers can read counter value and execute increment/decrement transactions
@@ -110,6 +112,6 @@ Phases execute in numeric order: 1 → 2 → 3 → 4 → 5
 |-------|----------------|--------|-----------|
 | 1. Foundation & Developer Setup | 4/4 | Complete | 2026-01-28 |
 | 2. UI Component Library | 3/3 | Complete | 2026-01-28 |
-| 3. Wallet Integration | 0/? | Not started | - |
+| 3. Wallet Integration | 0/3 | Not started | - |
 | 4. Smart Contract Integration | 0/? | Not started | - |
 | 5. Documentation & Polish | 0/? | Not started | - |
