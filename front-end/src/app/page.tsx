@@ -1,8 +1,13 @@
+"use client"
+
 import { Navbar } from "@/components/navbar"
 import { CounterDisplay } from "@/components/counter-display"
 import { NetworkIndicator } from "@/components/network-indicator"
+import { useWallet } from "@/components/providers/wallet-provider"
 
 export default function Home() {
+  const { network } = useWallet()
+
   return (
     <div className="min-h-screen bg-background">
       <Navbar />
@@ -10,7 +15,7 @@ export default function Home() {
         <div className="flex flex-col items-center gap-6">
           <div className="flex items-center gap-2">
             <span className="text-sm text-muted-foreground">Network:</span>
-            <NetworkIndicator network="devnet" />
+            <NetworkIndicator network={network} />
           </div>
           <CounterDisplay value={0} />
         </div>
