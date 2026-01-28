@@ -17,10 +17,12 @@
     "@stacks/transactions": "^7.0.2",
     "@stacks/wallet-sdk": "^7.0.4",
     "@tanstack/react-query": "^5.66.0",
+    "clsx": "^2.1.1",
     "next": "15.1.7",
     "react": "^19.0.0",
     "react-dom": "^19.0.0",
     "react-markdown": "^9.0.3",
+    "tailwind-merge": "^3.4.0",
     "timeago.js": "^4.0.2"
   },
   "devDependencies": {
