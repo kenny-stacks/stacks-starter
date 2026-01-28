@@ -9,19 +9,19 @@ See: .planning/PROJECT.md (updated 2026-01-28)
 
 ## Current Position
 
-Phase: 2 of 5 (UI Component Library) - COMPLETE
-Plan: 3 of 3 in current phase - COMPLETE
-Status: Phase complete
-Last activity: 2026-01-28 — Completed 02-03-PLAN.md (Page Integration and Visual Verification)
+Phase: 3 of 5 (Wallet Integration) - IN PROGRESS
+Plan: 1 of 4 in current phase - COMPLETE
+Status: In progress
+Last activity: 2026-01-28 — Completed 03-01-PLAN.md (Unified Wallet Provider)
 
-Progress: [████████░░] 40%
+Progress: [████████░░] 42%
 
 ## Performance Metrics
 
 **Velocity:**
-- Total plans completed: 7
-- Average duration: 3.0 min
-- Total execution time: 0.35 hours
+- Total plans completed: 8
+- Average duration: 2.8 min
+- Total execution time: 0.38 hours
 
 **By Phase:**
 
@@ -29,9 +29,10 @@ Progress: [████████░░] 40%
 |-------|-------|-------|----------|
 | 01-foundation-developer-setup | 4 | 16.4min | 4.1min |
 | 02-ui-component-library | 3 | 4.7min | 1.6min |
+| 03-wallet-integration | 1 | 1.6min | 1.6min |
 
 **Recent Trend:**
-- Last 5 plans: 01-04 (5.0min), 02-01 (2.2min), 02-02 (1.5min), 02-03 (1.0min)
+- Last 5 plans: 02-01 (2.2min), 02-02 (1.5min), 02-03 (1.0min), 03-01 (1.6min)
 - Trend: Feature component and integration plans faster than infrastructure setup
 
 *Updated after each plan completion*
@@ -64,6 +65,9 @@ Recent decisions affecting current work:
 - **Plan 02-02:** Disabled buttons as placeholder pattern for future integration
 - **Plan 02-03:** Page as Server Component - individual components handle client requirements
 - **Plan 02-03:** Network hardcoded to devnet until Phase 3 wallet integration
+- **Plan 03-01:** Unified WalletProvider over separate Leather/Devnet providers (single context simplifies consumption)
+- **Plan 03-01:** Promise-based @stacks/connect v8.x API (deprecated callback-based showConnect() removed)
+- **Plan 03-01:** Network from environment variable with devnet default (NEXT_PUBLIC_NETWORK)
 
 ### Pending Todos
 
@@ -80,12 +84,12 @@ None yet.
 - ESLint warnings about Tailwind shorthand (h-4 w-4 -> size-4) in shadcn-generated code (cosmetic only)
 
 **Phase 3:**
+- **Plan 03-01 COMPLETE:** WalletProvider integrated into AppProviders
 - Stacks Connect modal theming may break after Chakra removal (needs hands-on testing)
-- Provider nesting order: QueryClientProvider > ThemeProvider > WalletProviders (established in 01-04)
-- HiroWalletProvider and DevnetWalletProvider need integration into AppProviders
-- NetworkType from lib/networks.ts ready for wallet provider integration
-- Navbar Connect Wallet button ready for onClick handler
-- NetworkIndicator accepts network prop for dynamic display
+- useWallet hook now accessible from any client component
+- Navbar Connect Wallet button ready for onClick handler (connectWallet action available)
+- NetworkIndicator can use network from useWallet hook
+- Devnet wallet selector needs setDevnetWallet integration
 
 **Phase 4:**
 - Existing contract patterns in front-end/src/lib/ must be preserved (contract-utils.ts, stacks-api.ts)
@@ -95,8 +99,8 @@ None yet.
 
 ## Session Continuity
 
-Last session: 2026-01-28 21:07:12 UTC
-Stopped at: Completed 02-03-PLAN.md (Page Integration and Visual Verification)
+Last session: 2026-01-28 22:02:16 UTC
+Stopped at: Completed 03-01-PLAN.md (Unified Wallet Provider)
 Resume file: None
 
-**Phase 2 Complete:** All UI components created and integrated. Ready to begin Phase 3 (Wallet Integration).
+**Phase 3 Started:** Unified WalletProvider created and integrated. Ready for wallet UI components (connect button, display, devnet selector).
