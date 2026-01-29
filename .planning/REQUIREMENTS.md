@@ -9,17 +9,17 @@ Requirements for Hiro Platform Migration. Remove hosted devnet dependency.
 
 ### Code Changes
 
-- [ ] **CODE-01**: Remove Hiro Platform API constants from `devnet.ts`
-- [ ] **CODE-02**: Remove `NEXT_PUBLIC_DEVNET_HOST` conditional logic (always use local)
-- [ ] **CODE-03**: Remove `NEXT_PUBLIC_PLATFORM_HIRO_API_KEY` environment variable usage
-- [ ] **CODE-04**: Simplify devnet network configuration to localhost:3999 only
+- [x] **CODE-01**: Remove Hiro Platform API constants from `devnet.ts`
+- [x] **CODE-02**: Remove `NEXT_PUBLIC_DEVNET_HOST` conditional logic (always use local)
+- [x] **CODE-03**: Remove `NEXT_PUBLIC_PLATFORM_HIRO_API_KEY` environment variable usage
+- [x] **CODE-04**: Simplify devnet network configuration to localhost:3999 only
 
 ### Documentation Changes
 
-- [ ] **DOCS-01**: Update README with local devnet setup instructions (replace Hiro Platform references)
-- [ ] **DOCS-02**: Rewrite getting-started.md for Clarinet devnet workflow
-- [ ] **DOCS-03**: Update extending.md to remove Hiro Platform deployment references
-- [ ] **DOCS-04**: Update .env.example to remove platform-specific variables
+- [x] **DOCS-01**: Update README with local devnet setup instructions (replace Hiro Platform references)
+- [x] **DOCS-02**: Rewrite getting-started.md for Clarinet devnet workflow
+- [x] **DOCS-03**: Update extending.md to remove Hiro Platform deployment references
+- [x] **DOCS-04**: Update .env.example to remove platform-specific variables
 
 ## Out of Scope
 
@@ -33,14 +33,14 @@ Requirements for Hiro Platform Migration. Remove hosted devnet dependency.
 
 | Requirement | Phase | Status |
 |-------------|-------|--------|
-| CODE-01 | Phase 6 | Pending |
-| CODE-02 | Phase 6 | Pending |
-| CODE-03 | Phase 6 | Pending |
-| CODE-04 | Phase 6 | Pending |
-| DOCS-01 | Phase 6 | Pending |
-| DOCS-02 | Phase 6 | Pending |
-| DOCS-03 | Phase 6 | Pending |
-| DOCS-04 | Phase 6 | Pending |
+| CODE-01 | Phase 6 | Complete |
+| CODE-02 | Phase 6 | Complete |
+| CODE-03 | Phase 6 | Complete |
+| CODE-04 | Phase 6 | Complete |
+| DOCS-01 | Phase 6 | Complete |
+| DOCS-02 | Phase 6 | Complete |
+| DOCS-03 | Phase 6 | Complete |
+| DOCS-04 | Phase 6 | Complete |
 
 **Coverage:**
 - v1.1 requirements: 8 total
@@ -49,4 +49,4 @@ Requirements for Hiro Platform Migration. Remove hosted devnet dependency.
 
 ---
 *Requirements defined: 2026-01-29*
-*Last updated: 2026-01-29 after roadmap creation*
+*Last updated: 2026-01-29 — All v1.1 requirements complete*

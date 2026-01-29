@@ -3,7 +3,7 @@
 ## Milestones
 
 - ✅ **v1 MVP** - Phases 1-5 (shipped 2026-01-29)
-- 🚧 **v1.1 Hiro Platform Migration** - Phase 6 (in progress)
+- ✅ **v1.1 Hiro Platform Migration** - Phase 6 (shipped 2026-01-29)
 
 ## Phases
 
@@ -57,7 +57,7 @@ Plans:
 
 </details>
 
-### 🚧 v1.1 Hiro Platform Migration (In Progress)
+### ✅ v1.1 Hiro Platform Migration (Complete)
 
 **Milestone Goal:** Remove Hiro Platform hosted devnet dependency and make local Clarinet devnet the only development path.
 
@@ -73,8 +73,8 @@ Plans:
 **Plans**: 2 plans
 
 Plans:
-- [ ] 06-01-PLAN.md — Remove Hiro Platform configuration from code and environment files
-- [ ] 06-02-PLAN.md — Update all documentation for local Clarinet devnet workflow
+- [x] 06-01-PLAN.md — Remove Hiro Platform configuration from code and environment files
+- [x] 06-02-PLAN.md — Update all documentation for local Clarinet devnet workflow
 
 ## Progress
 
@@ -88,4 +88,4 @@ Phases execute in numeric order: 1 → 2 → 3 → 4 → 5 → 6
 | 3. Contract Interaction | v1 | 3/3 | Complete | 2026-01-29 |
 | 4. UI Foundation | v1 | 3/3 | Complete | 2026-01-29 |
 | 5. Documentation & Polish | v1 | 3/3 | Complete | 2026-01-29 |
-| 6. Hiro Platform Removal | v1.1 | 0/2 | In progress | - |
+| 6. Hiro Platform Removal | v1.1 | 2/2 | Complete | 2026-01-29 |
