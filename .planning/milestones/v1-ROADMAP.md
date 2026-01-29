@@ -1,4 +1,8 @@
-# Roadmap: Stacks Starter
+# Milestone v1: Stacks Starter MVP
+
+**Status:** SHIPPED 2026-01-29
+**Phases:** 1-5
+**Total Plans:** 15
 
 ## Overview
 
@@ -6,21 +10,8 @@ Transform the existing Stacks fundraising dApp into a minimal developer starter 
 
 ## Phases
 
-**Phase Numbering:**
-- Integer phases (1, 2, 3): Planned milestone work
-- Decimal phases (2.1, 2.2): Urgent insertions (marked with INSERTED)
-
-Decimal phases appear between their surrounding integers in numeric order.
-
-- [x] **Phase 1: Foundation & Developer Setup** - Tailwind/shadcn infrastructure, dark mode, dev tooling
-- [x] **Phase 2: UI Component Library** - shadcn components and feature-specific UI
-- [x] **Phase 3: Wallet Integration** - Leather wallet + devnet selector with connection management
-- [x] **Phase 4: Smart Contract Integration** - Counter contract with read/write operations
-- [x] **Phase 5: Documentation & Polish** - Comprehensive developer documentation
-
-## Phase Details
-
 ### Phase 1: Foundation & Developer Setup
+
 **Goal**: Developers can run the project locally with modern UI foundation and development tools
 **Depends on**: Nothing (first phase)
 **Requirements**: FOUN-01, FOUN-02, FOUN-03, FOUN-04, DEVX-05, DEVX-06
@@ -38,7 +29,10 @@ Plans:
 - [x] 01-03-PLAN.md — Dev tooling (ESLint Tailwind plugin, Prettier, Vitest)
 - [x] 01-04-PLAN.md — Dark mode + Chakra UI removal
 
+**Completed:** 2026-01-28
+
 ### Phase 2: UI Component Library
+
 **Goal**: Developers have working shadcn components and feature UI ready for wallet/contract integration
 **Depends on**: Phase 1
 **Requirements**: UICM-01, UICM-02, UICM-03, UICM-04
@@ -55,7 +49,10 @@ Plans:
 - [x] 02-02-PLAN.md — Create feature components (Navbar, Counter Display, Network Indicator)
 - [x] 02-03-PLAN.md — Page integration and visual verification
 
+**Completed:** 2026-01-28
+
 ### Phase 3: Wallet Integration
+
 **Goal**: Developers can connect wallets (Leather extension or devnet selector) and manage connection state
 **Depends on**: Phase 2
 **Requirements**: WALL-01, WALL-02, WALL-03, WALL-04
@@ -72,7 +69,10 @@ Plans:
 - [x] 03-02-PLAN.md — Wallet UI components (DevnetWalletSelector, ConnectButton, WalletDropdown)
 - [x] 03-03-PLAN.md — Navbar integration and visual verification
 
+**Completed:** 2026-01-28
+
 ### Phase 4: Smart Contract Integration
+
 **Goal**: Developers can read counter value and execute increment/decrement transactions
 **Depends on**: Phase 3
 **Requirements**: CONT-01, CONT-02, CONT-03, CONT-04, CONT-05
@@ -90,7 +90,10 @@ Plans:
 - [x] 04-02-PLAN.md — React Query hooks for contract interaction
 - [x] 04-03-PLAN.md — UI integration and end-to-end verification
 
+**Completed:** 2026-01-28
+
 ### Phase 5: Documentation & Polish
+
 **Goal**: Developers understand architecture, patterns, and how to extend the starter kit
 **Depends on**: Phase 4
 **Requirements**: DEVX-01, DEVX-02, DEVX-03, DEVX-04
@@ -106,15 +109,35 @@ Plans:
 - [x] 05-01-PLAN.md — README and getting-started.md (entry point documentation)
 - [x] 05-02-PLAN.md — patterns.md and extending.md (deep-dive documentation)
 
-## Progress
+**Completed:** 2026-01-29
 
-**Execution Order:**
-Phases execute in numeric order: 1 → 2 → 3 → 4 → 5
+---
 
-| Phase | Plans Complete | Status | Completed |
-|-------|----------------|--------|-----------|
-| 1. Foundation & Developer Setup | 4/4 | Complete | 2026-01-28 |
-| 2. UI Component Library | 3/3 | Complete | 2026-01-28 |
-| 3. Wallet Integration | 3/3 | Complete | 2026-01-28 |
-| 4. Smart Contract Integration | 3/3 | Complete | 2026-01-28 |
-| 5. Documentation & Polish | 2/2 | Complete | 2026-01-29 |
+## Milestone Summary
+
+**Key Decisions:**
+- shadcn/Tailwind over Chakra UI for customization and DX
+- Tailwind v3 over v4 for browser compatibility (starter kit priority)
+- Counter contract as simplest example showing read + write patterns
+- Unified WalletProvider over separate Leather/Devnet providers
+- next-themes for dark mode (SSR-safe, no hydration flash)
+- Promise-based @stacks/connect v8.x API (modern async/await)
+- Link to source files in docs instead of inline code (maintainability)
+
+**Issues Resolved:**
+- Chakra UI completely removed (62 packages)
+- Hydration flash eliminated with next-themes + mounted state pattern
+- React Query hooks established for contract interaction
+- Documentation structure established (README → getting-started → patterns → extending)
+
+**Issues Deferred:**
+- Input, Dialog shadcn components included but unused (for extension)
+- Legacy useDevnetWallet hook export (minor cleanup)
+
+**Technical Debt Incurred:**
+- 8 Chakra components in _deprecated-chakra folders (can be deleted)
+- ESLint warnings about Tailwind shorthand (cosmetic only)
+
+---
+
+_For current project status, see .planning/ROADMAP.md (next milestone)_

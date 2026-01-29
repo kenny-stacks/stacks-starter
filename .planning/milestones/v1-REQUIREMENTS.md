@@ -1,3 +1,13 @@
+# Requirements Archive: v1 Stacks Starter
+
+**Archived:** 2026-01-29
+**Status:** SHIPPED
+
+This is the archived requirements specification for v1.
+For current requirements, see `.planning/REQUIREMENTS.md` (created for next milestone).
+
+---
+
 # Requirements: Stacks Starter
 
 **Defined:** 2026-01-28
@@ -114,8 +124,15 @@ Which phases cover which requirements. Updated during roadmap creation.
 **Coverage:**
 - v1 requirements: 23 total
 - Mapped to phases: 23
-- Unmapped: 0 ✓
+- Unmapped: 0
 
 ---
-*Requirements defined: 2026-01-28*
-*Last updated: 2026-01-29 after Phase 5 completion*
+
+## Milestone Summary
+
+**Shipped:** 23 of 23 v1 requirements
+**Adjusted:** None — all requirements implemented as specified
+**Dropped:** None
+
+---
+*Archived: 2026-01-29 as part of v1 milestone completion*

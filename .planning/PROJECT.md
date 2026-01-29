@@ -8,29 +8,44 @@ A minimal starter kit for building dApps on the Stacks blockchain. Provides wall
 
 Developers can connect a wallet and interact with a smart contract within minutes of cloning — the architecture just works.
 
+## Current State
+
+**Version:** v1 MVP shipped 2026-01-29
+
+**Tech Stack:**
+- Next.js 15, React 19, TypeScript
+- shadcn/ui + Tailwind CSS (replaced Chakra UI)
+- Clarity smart contracts with Clarinet
+- @stacks/connect for wallet integration
+- React Query for blockchain state management
+
+**Codebase:**
+- 3,477 lines TypeScript + Clarity
+- Counter contract demonstrating read/write patterns
+- Unified WalletProvider supporting Leather + devnet
+- 4 documentation files (README, getting-started, patterns, extending)
+
 ## Requirements
 
 ### Validated
 
-<!-- Existing architecture being preserved -->
-
-- ✓ Multi-network support (devnet/testnet/mainnet) — existing
-- ✓ Hiro Wallet integration for testnet/mainnet — existing
-- ✓ Devnet wallet selector (6 test wallets) — existing
-- ✓ Contract interaction patterns (read-only + transactions) — existing
-- ✓ Network-aware configuration via environment variables — existing
-- ✓ React Query for blockchain state management — existing
-- ✓ Vitest setup for Clarity contract testing — existing
+- ✓ Multi-network support (devnet/testnet/mainnet) — v1
+- ✓ Leather Wallet integration for testnet/mainnet — v1
+- ✓ Devnet wallet selector (6 test wallets) — v1
+- ✓ Contract interaction patterns (read-only + transactions) — v1
+- ✓ Network-aware configuration via environment variables — v1
+- ✓ React Query for blockchain state management — v1
+- ✓ Vitest setup for Clarity contract testing — v1
+- ✓ shadcn/Tailwind UI foundation with dark mode — v1
+- ✓ Counter contract with increment/decrement/get-count — v1
+- ✓ Navbar with wallet connection + network indicator — v1
+- ✓ Counter display with transaction status — v1
+- ✓ README with setup instructions and architecture overview — v1
+- ✓ Docs folder with patterns and extension guide — v1
 
 ### Active
 
-<!-- What we're building in this transformation -->
-
-- [ ] Replace Chakra UI with shadcn/Tailwind
-- [ ] Replace fundraising contract with simple counter contract
-- [ ] Minimal shell UI (navbar with wallet connection + counter display)
-- [ ] README with setup instructions and architecture overview
-- [ ] Docs folder with patterns and extension guide
+(None — project complete as MVP)
 
 ### Out of Scope
 
@@ -39,26 +54,13 @@ Developers can connect a wallet and interact with a smart contract within minute
 - Backend/API — frontend + smart contract only
 - Authentication beyond wallet — wallet IS the auth
 - Price feeds/currency conversion — not needed for a counter demo
-
-## Context
-
-**Current state:** Fully functional fundraising dApp with Chakra UI, complex campaign logic, donation flows, admin controls.
-
-**Transformation goal:** Strip down to essential architecture, swap UI framework, replace domain-specific logic with generic counter example.
-
-**Codebase mapping:** `.planning/codebase/` contains detailed analysis of current architecture, patterns, and structure.
-
-**Key files to preserve patterns from:**
-- `front-end/src/lib/contract-utils.ts` — transaction execution
-- `front-end/src/lib/stacks-api.ts` — API client setup
-- `front-end/src/components/HiroWalletProvider.tsx` — wallet context
-- `front-end/src/components/DevnetWalletProvider.tsx` — devnet wallets
-- `front-end/src/hooks/` — React Query patterns
+- Mobile app — web-first starter kit
+- Real-time subscriptions — beyond starter scope
 
 ## Constraints
 
 - **Tech stack**: Next.js 15, React 19, TypeScript, shadcn/Tailwind, Clarity
-- **Compatibility**: Must work with Hiro Wallet browser extension
+- **Compatibility**: Must work with Leather Wallet browser extension
 - **Networks**: Must support devnet, testnet, and mainnet configurations
 - **Testing**: Vitest + Clarinet SDK for contract tests
 
@@ -66,10 +68,13 @@ Developers can connect a wallet and interact with a smart contract within minute
 
 | Decision | Rationale | Outcome |
 |----------|-----------|---------|
-| shadcn/Tailwind over Chakra | More popular, flexible, better DX for customization | — Pending |
-| Counter as demo contract | Simplest possible example that shows read + write | — Pending |
-| Keep devnet wallet selector | Essential for local development without browser extension | — Pending |
-| Docs folder for patterns | README alone insufficient for architecture explanation | — Pending |
+| shadcn/Tailwind over Chakra | More popular, flexible, better DX for customization | ✓ Good — clean foundation |
+| Counter as demo contract | Simplest possible example that shows read + write | ✓ Good — clear patterns |
+| Keep devnet wallet selector | Essential for local development without browser extension | ✓ Good — great DX |
+| Docs folder for patterns | README alone insufficient for architecture explanation | ✓ Good — progressive disclosure |
+| Unified WalletProvider | Single context simplifies consumption regardless of network | ✓ Good — cleaner API |
+| next-themes for dark mode | SSR-safe, handles hydration, system theme detection | ✓ Good — no flash |
+| Link to source in docs | Inline code goes stale; links encourage exploring actual code | ✓ Good — maintainable |
 
 ---
-*Last updated: 2026-01-28 after initialization*
+*Last updated: 2026-01-29 after v1 milestone*
