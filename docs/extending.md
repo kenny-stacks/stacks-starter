@@ -156,8 +156,11 @@ Import your new hook and connect it to a button or display component.
 
 ### Testnet deployment
 
-1. Deploy your contract to testnet via [Hiro Platform](https://platform.hiro.so)
-2. Set environment variable: `NEXT_PUBLIC_NETWORK=testnet`
+1. Deploy your contract using Clarinet:
+   ```bash
+   cd clarity && clarinet deployments apply -p deployments/default.testnet-plan.yaml
+   ```
+2. Set environment variable: `NEXT_PUBLIC_STACKS_NETWORK=testnet`
 3. Add testnet deployer address to `.env`:
    ```
    NEXT_PUBLIC_CONTRACT_DEPLOYER_TESTNET_ADDRESS=ST...
@@ -166,8 +169,11 @@ Import your new hook and connect it to a button or display component.
 
 ### Mainnet deployment
 
-1. Deploy your contract to mainnet via Hiro Platform
-2. Set environment variable: `NEXT_PUBLIC_NETWORK=mainnet`
+1. Deploy your contract using Clarinet:
+   ```bash
+   cd clarity && clarinet deployments apply -p deployments/default.mainnet-plan.yaml
+   ```
+2. Set environment variable: `NEXT_PUBLIC_STACKS_NETWORK=mainnet`
 3. Add mainnet deployer address to `.env`:
    ```
    NEXT_PUBLIC_CONTRACT_DEPLOYER_MAINNET_ADDRESS=SP...
@@ -180,5 +186,5 @@ Import your new hook and connect it to a button or display component.
 |--------|--------|-----------------|
 | Wallet | Pre-funded test wallets | Leather extension required |
 | Signing | Automatic | User approval required |
-| Deploy | `clarinet devnet start` | Hiro Platform |
+| Deploy | `clarinet devnet start` | `clarinet deployments apply` |
 | Addresses | ST... (test) | ST.../SP... (real) |
