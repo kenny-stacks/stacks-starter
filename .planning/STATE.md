@@ -10,11 +10,11 @@ See: .planning/PROJECT.md (updated 2026-01-29)
 ## Current Position
 
 Phase: 6 of 6 (Hiro Platform Removal)
-Plan: Ready to plan
-Status: Ready to plan
-Last activity: 2026-01-29 — Roadmap created for v1.1 milestone
+Plan: 2 of 3
+Status: In progress
+Last activity: 2026-01-29 — Completed 06-02-PLAN.md (Update Documentation)
 
-Progress: [██████████████████░░] 100% v1 complete, v1.1 starting
+Progress: [███████████████████░] 95% milestone complete (plan 2/3 done)
 
 ## Performance Metrics
 
@@ -25,9 +25,10 @@ Progress: [██████████████████░░] 100% v1
 - 118 files created/modified
 - 3,477 lines of code
 
-**v1.1 Milestone (Starting):**
-- Total plans completed: 0
+**v1.1 Milestone (In Progress):**
+- Total plans completed: 2 (06-01, 06-02)
 - Current phase: 6 (Hiro Platform Removal)
+- Files modified: 6 (env files + documentation)
 
 ## Accumulated Context
 
@@ -39,6 +40,8 @@ Recent decisions affecting current work:
 - v1: Unified WalletProvider simplifies multi-network support
 - v1: Kept devnet wallet selector for DX (essential for local development)
 - v1.1: Remove Hiro Platform to simplify to local-only devnet
+- 06-02: Docker Desktop now required prerequisite for local devnet
+- 06-02: Clarinet devnet start is the only documented development path
 
 ### Pending Todos
 
@@ -51,5 +54,6 @@ None.
 ## Session Continuity
 
 Last session: 2026-01-29
-Stopped at: Roadmap created, ready to plan Phase 6
+Stopped at: Completed 06-02-PLAN.md (Update Documentation)
 Resume file: None
+Next: Plan 06-03 (Update UI/code if needed)
