@@ -33,9 +33,16 @@ plan:
             path: "./.cache/requirements/SM3VDXK3WZZSA84XXFKAFAF15NNZX32CTSG82JFQ4.sbtc-deposit.clar"
             clarity-version: 3
         - contract-publish:
+            contract-name: counter
+            expected-sender: ST1PQHQKV0RJXZFY1DGX8MNSNYVE3VGZJSRTPGZGM
+            cost: 4120
+            path: contracts/counter.clar
+            anchor-block-only: true
+            clarity-version: 3
+        - contract-publish:
             contract-name: fundraising
             expected-sender: ST1PQHQKV0RJXZFY1DGX8MNSNYVE3VGZJSRTPGZGM
-            cost: 67180
+            cost: 68210
             path: contracts/fundraising.clar
             anchor-block-only: true
             clarity-version: 3
