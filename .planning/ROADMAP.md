@@ -100,10 +100,11 @@ Plans:
   3. Developer reads docs/patterns.md and understands wallet integration, contract interaction, and React Query patterns
   4. Developer reads docs/extending.md and knows how to add new contract functions or replace counter with their own contract
   5. Documentation explains what code is scaffolding (keep), examples (delete after learning), and developer code (modify)
-**Plans**: TBD
+**Plans:** 2 plans
 
 Plans:
-- [ ] 05-01: TBD during planning
+- [ ] 05-01-PLAN.md — README and getting-started.md (entry point documentation)
+- [ ] 05-02-PLAN.md — patterns.md and extending.md (deep-dive documentation)
 
 ## Progress
 
@@ -116,4 +117,4 @@ Phases execute in numeric order: 1 → 2 → 3 → 4 → 5
 | 2. UI Component Library | 3/3 | Complete | 2026-01-28 |
 | 3. Wallet Integration | 3/3 | Complete | 2026-01-28 |
 | 4. Smart Contract Integration | 3/3 | Complete | 2026-01-28 |
-| 5. Documentation & Polish | 0/? | Not started | - |
+| 5. Documentation & Polish | 0/2 | Ready | - |
