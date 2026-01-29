@@ -70,11 +70,11 @@ Plans:
   2. Environment variables contain no platform-specific keys (NEXT_PUBLIC_PLATFORM_HIRO_API_KEY removed)
   3. README shows local devnet setup with `clarinet devnet start` (no platform references)
   4. All documentation guides reflect local-only Clarinet workflow
-**Plans**: TBD
+**Plans**: 2 plans
 
 Plans:
-- [ ] 06-01: TBD
-- [ ] 06-02: TBD
+- [ ] 06-01-PLAN.md — Remove Hiro Platform configuration from code and environment files
+- [ ] 06-02-PLAN.md — Update all documentation for local Clarinet devnet workflow
 
 ## Progress
 
@@ -88,4 +88,4 @@ Phases execute in numeric order: 1 → 2 → 3 → 4 → 5 → 6
 | 3. Contract Interaction | v1 | 3/3 | Complete | 2026-01-29 |
 | 4. UI Foundation | v1 | 3/3 | Complete | 2026-01-29 |
 | 5. Documentation & Polish | v1 | 3/3 | Complete | 2026-01-29 |
-| 6. Hiro Platform Removal | v1.1 | 0/0 | Not started | - |
+| 6. Hiro Platform Removal | v1.1 | 0/2 | In progress | - |
