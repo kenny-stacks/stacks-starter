@@ -30,18 +30,18 @@ Requirements for initial release. Each maps to roadmap phases.
 
 ### Smart Contract
 
-- [ ] **CONT-01**: Counter contract with increment, decrement, get-count functions
-- [ ] **CONT-02**: Contract deploys to devnet via Clarinet
-- [ ] **CONT-03**: Read-only call (get-count) works from frontend
-- [ ] **CONT-04**: Transaction call (increment/decrement) works from frontend
-- [ ] **CONT-05**: Transaction status shows pending/confirmed/failed
+- [x] **CONT-01**: Counter contract with increment, decrement, get-count functions
+- [x] **CONT-02**: Contract deploys to devnet via Clarinet
+- [x] **CONT-03**: Read-only call (get-count) works from frontend
+- [x] **CONT-04**: Transaction call (increment/decrement) works from frontend
+- [x] **CONT-05**: Transaction status shows pending/confirmed/failed
 
 ### Developer Experience
 
-- [ ] **DEVX-01**: README with prerequisites, quick start, and project structure
-- [ ] **DEVX-02**: docs/getting-started.md with detailed setup walkthrough
-- [ ] **DEVX-03**: docs/patterns.md explaining wallet, contract, and query patterns
-- [ ] **DEVX-04**: docs/extending.md guide for adding new contracts and features
+- [x] **DEVX-01**: README with prerequisites, quick start, and project structure
+- [x] **DEVX-02**: docs/getting-started.md with detailed setup walkthrough
+- [x] **DEVX-03**: docs/patterns.md explaining wallet, contract, and query patterns
+- [x] **DEVX-04**: docs/extending.md guide for adding new contracts and features
 - [x] **DEVX-05**: Working `pnpm dev` starts app connected to devnet
 - [x] **DEVX-06**: Working `pnpm test` runs contract tests via Vitest
 
@@ -99,15 +99,15 @@ Which phases cover which requirements. Updated during roadmap creation.
 | WALL-02 | Phase 3 | Complete |
 | WALL-03 | Phase 3 | Complete |
 | WALL-04 | Phase 3 | Complete |
-| CONT-01 | Phase 4 | Pending |
-| CONT-02 | Phase 4 | Pending |
-| CONT-03 | Phase 4 | Pending |
-| CONT-04 | Phase 4 | Pending |
-| CONT-05 | Phase 4 | Pending |
-| DEVX-01 | Phase 5 | Pending |
-| DEVX-02 | Phase 5 | Pending |
-| DEVX-03 | Phase 5 | Pending |
-| DEVX-04 | Phase 5 | Pending |
+| CONT-01 | Phase 4 | Complete |
+| CONT-02 | Phase 4 | Complete |
+| CONT-03 | Phase 4 | Complete |
+| CONT-04 | Phase 4 | Complete |
+| CONT-05 | Phase 4 | Complete |
+| DEVX-01 | Phase 5 | Complete |
+| DEVX-02 | Phase 5 | Complete |
+| DEVX-03 | Phase 5 | Complete |
+| DEVX-04 | Phase 5 | Complete |
 | DEVX-05 | Phase 1 | Complete |
 | DEVX-06 | Phase 1 | Complete |
 
@@ -118,4 +118,4 @@ Which phases cover which requirements. Updated during roadmap creation.
 
 ---
 *Requirements defined: 2026-01-28*
-*Last updated: 2026-01-28 after roadmap creation*
+*Last updated: 2026-01-29 after Phase 5 completion*

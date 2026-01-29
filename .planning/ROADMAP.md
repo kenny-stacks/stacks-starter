@@ -16,7 +16,7 @@ Decimal phases appear between their surrounding integers in numeric order.
 - [x] **Phase 2: UI Component Library** - shadcn components and feature-specific UI
 - [x] **Phase 3: Wallet Integration** - Leather wallet + devnet selector with connection management
 - [x] **Phase 4: Smart Contract Integration** - Counter contract with read/write operations
-- [ ] **Phase 5: Documentation & Polish** - Comprehensive developer documentation
+- [x] **Phase 5: Documentation & Polish** - Comprehensive developer documentation
 
 ## Phase Details
 
@@ -103,8 +103,8 @@ Plans:
 **Plans:** 2 plans
 
 Plans:
-- [ ] 05-01-PLAN.md — README and getting-started.md (entry point documentation)
-- [ ] 05-02-PLAN.md — patterns.md and extending.md (deep-dive documentation)
+- [x] 05-01-PLAN.md — README and getting-started.md (entry point documentation)
+- [x] 05-02-PLAN.md — patterns.md and extending.md (deep-dive documentation)
 
 ## Progress
 
@@ -117,4 +117,4 @@ Phases execute in numeric order: 1 → 2 → 3 → 4 → 5
 | 2. UI Component Library | 3/3 | Complete | 2026-01-28 |
 | 3. Wallet Integration | 3/3 | Complete | 2026-01-28 |
 | 4. Smart Contract Integration | 3/3 | Complete | 2026-01-28 |
-| 5. Documentation & Polish | 0/2 | Ready | - |
+| 5. Documentation & Polish | 2/2 | Complete | 2026-01-29 |
