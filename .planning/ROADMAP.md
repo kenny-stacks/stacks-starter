@@ -15,7 +15,7 @@ Decimal phases appear between their surrounding integers in numeric order.
 - [x] **Phase 1: Foundation & Developer Setup** - Tailwind/shadcn infrastructure, dark mode, dev tooling
 - [x] **Phase 2: UI Component Library** - shadcn components and feature-specific UI
 - [x] **Phase 3: Wallet Integration** - Leather wallet + devnet selector with connection management
-- [ ] **Phase 4: Smart Contract Integration** - Counter contract with read/write operations
+- [x] **Phase 4: Smart Contract Integration** - Counter contract with read/write operations
 - [ ] **Phase 5: Documentation & Polish** - Comprehensive developer documentation
 
 ## Phase Details
@@ -86,9 +86,9 @@ Plans:
 **Plans:** 3 plans
 
 Plans:
-- [ ] 04-01-PLAN.md — Counter contract and Clarinet configuration
-- [ ] 04-02-PLAN.md — React Query hooks for contract interaction
-- [ ] 04-03-PLAN.md — UI integration and end-to-end verification
+- [x] 04-01-PLAN.md — Counter contract and Clarinet configuration
+- [x] 04-02-PLAN.md — React Query hooks for contract interaction
+- [x] 04-03-PLAN.md — UI integration and end-to-end verification
 
 ### Phase 5: Documentation & Polish
 **Goal**: Developers understand architecture, patterns, and how to extend the starter kit
@@ -115,5 +115,5 @@ Phases execute in numeric order: 1 → 2 → 3 → 4 → 5
 | 1. Foundation & Developer Setup | 4/4 | Complete | 2026-01-28 |
 | 2. UI Component Library | 3/3 | Complete | 2026-01-28 |
 | 3. Wallet Integration | 3/3 | Complete | 2026-01-28 |
-| 4. Smart Contract Integration | 0/3 | Not started | - |
+| 4. Smart Contract Integration | 3/3 | Complete | 2026-01-28 |
 | 5. Documentation & Polish | 0/? | Not started | - |
