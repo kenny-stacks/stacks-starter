@@ -7,6 +7,7 @@ A minimal starter kit for building dApps on Stacks. Connect a wallet, interact w
 - [Node.js 18+](https://nodejs.org)
 - [pnpm](https://pnpm.io/installation)
 - [Clarinet](https://docs.hiro.so/clarinet) (for local contract development)
+- [Docker Desktop](https://www.docker.com/products/docker-desktop) (required for local devnet)
 - Basic knowledge of [React](https://react.dev), [TypeScript](https://www.typescriptlang.org/docs/), and [Stacks](https://docs.stacks.co)
 
 ## Quick Start
@@ -16,13 +17,13 @@ pnpm install
 cp front-end/.env.example front-end/.env
 ```
 
-Add your [Hiro Platform API key](https://platform.hiro.so/settings/api-keys) to `front-end/.env`:
+Start local devnet (requires Docker):
 
-```
-NEXT_PUBLIC_PLATFORM_HIRO_API_KEY=your-api-key
+```bash
+cd clarity && clarinet devnet start
 ```
 
-Start Devnet in the [Hiro Platform](https://platform.hiro.so), then:
+Wait for contracts to deploy (watch for block ~45), then in a new terminal:
 
 ```bash
 pnpm --filter front-end dev
