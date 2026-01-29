@@ -8,6 +8,16 @@ A minimal starter kit for building dApps on the Stacks blockchain. Provides wall
 
 Developers can connect a wallet and interact with a smart contract within minutes of cloning — the architecture just works.
 
+## Current Milestone: v1.1 Hiro Platform Migration
+
+**Goal:** Remove Hiro Platform hosted devnet dependency and make local Clarinet devnet the only development path.
+
+**Target changes:**
+- Remove Hiro Platform API configuration and conditional logic
+- Simplify devnet setup to local-only (`clarinet devnet start`)
+- Update all documentation to reflect local devnet workflow
+- Clean up environment variables (remove platform-specific vars)
+
 ## Current State
 
 **Version:** v1 MVP shipped 2026-01-29
@@ -45,7 +55,12 @@ Developers can connect a wallet and interact with a smart contract within minute
 
 ### Active
 
-(None — project complete as MVP)
+- [ ] Remove Hiro Platform hosted devnet configuration — v1.1
+- [ ] Simplify devnet constants to local-only — v1.1
+- [ ] Update environment variable configuration — v1.1
+- [ ] Update README with local devnet instructions — v1.1
+- [ ] Update getting-started guide for Clarinet workflow — v1.1
+- [ ] Update extending guide to remove platform references — v1.1
 
 ### Out of Scope
 
@@ -77,4 +92,4 @@ Developers can connect a wallet and interact with a smart contract within minute
 | Link to source in docs | Inline code goes stale; links encourage exploring actual code | ✓ Good — maintainable |
 
 ---
-*Last updated: 2026-01-29 after v1 milestone*
+*Last updated: 2026-01-29 after v1.1 milestone start*

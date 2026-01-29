@@ -5,25 +5,16 @@
 See: .planning/PROJECT.md (updated 2026-01-29)
 
 **Core value:** Developers can connect a wallet and interact with a smart contract within minutes of cloning
-**Current focus:** v1 MVP complete — planning next milestone or project wrap
+**Current focus:** v1.1 Hiro Platform Migration — remove hosted devnet, use local Clarinet
 
 ## Current Position
 
-Phase: N/A — milestone complete
-Plan: N/A
-Status: Ready for next milestone or project wrap
-Last activity: 2026-01-29 — v1 milestone shipped
+Phase: Not started (defining requirements)
+Plan: —
+Status: Defining requirements
+Last activity: 2026-01-29 — Milestone v1.1 started
 
-Progress: [████████████████] 100% (v1 complete)
-
-## Milestone Summary
-
-**v1 MVP shipped:** 2026-01-29
-- 5 phases, 15 plans completed
-- 23/23 requirements satisfied
-- All verification criteria passed
-
-See `.planning/MILESTONES.md` for full details.
+Progress: [░░░░░░░░░░░░░░░░] 0%
 
 ## Accumulated Context
 
@@ -37,12 +28,10 @@ None.
 
 ### Blockers/Concerns
 
-None — project complete as MVP.
+None.
 
 ## Session Continuity
 
 Last session: 2026-01-29
-Stopped at: v1 milestone completion
+Stopped at: Milestone v1.1 initialization
 Resume file: None
-
-**MILESTONE COMPLETE:** Run `/gsd:new-milestone` to start next version, or project is ready for use.
