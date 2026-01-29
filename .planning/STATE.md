@@ -5,16 +5,16 @@
 See: .planning/PROJECT.md (updated 2026-01-29)
 
 **Core value:** Developers can connect a wallet and interact with a smart contract within minutes of cloning
-**Current focus:** Milestone v1.1 complete
+**Current focus:** Project complete (v1.1 shipped)
 
 ## Current Position
 
-Phase: 6 of 6 (Hiro Platform Removal) — COMPLETE
+Phase: 6 of 6 (all complete)
 Plan: All plans complete
-Status: Milestone v1.1 complete
-Last activity: 2026-01-29 — Phase 6 executed and verified
+Status: v1.1 milestone shipped
+Last activity: 2026-01-29 — v1.1 milestone complete
 
-Progress: [████████████████████] 100% v1.1 complete
+Progress: [████████████████████] 100% — All milestones shipped
 
 ## Performance Metrics
 
@@ -29,6 +29,7 @@ Progress: [████████████████████] 100% v1
 - Total plans completed: 2
 - Total phases completed: 1
 - Duration: 1 day
+- 11 files modified
 - Removed Hiro Platform dependency
 - Simplified to local-only devnet
 
@@ -38,12 +39,10 @@ Progress: [████████████████████] 100% v1
 
 All key decisions logged in PROJECT.md Key Decisions table.
 
-Recent decisions affecting current work:
-- v1: Unified WalletProvider simplifies multi-network support
-- v1: Kept devnet wallet selector for DX (essential for local development)
-- v1.1: Remove Hiro Platform to simplify to local-only devnet
-- 06-02: Docker Desktop now required prerequisite for local devnet
-- 06-02: Clarinet devnet start is the only documented development path
+Key decisions from v1.1:
+- Local-only devnet removes external dependency
+- Docker Desktop now required prerequisite
+- Clarinet devnet start is the only documented development path
 
 ### Pending Todos
 
@@ -56,5 +55,11 @@ None.
 ## Session Continuity
 
 Last session: 2026-01-29
-Stopped at: Milestone v1.1 complete
+Stopped at: v1.1 milestone complete
 Resume file: None
+
+## Archives
+
+- `.planning/milestones/v1.1-ROADMAP.md` — v1.1 roadmap archive
+- `.planning/milestones/v1.1-REQUIREMENTS.md` — v1.1 requirements archive
+- `.planning/milestones/v1.1-MILESTONE-AUDIT.md` — v1.1 audit report
