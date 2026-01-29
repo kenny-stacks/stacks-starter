@@ -5,23 +5,23 @@
 See: .planning/PROJECT.md (updated 2026-01-28)
 
 **Core value:** Developers can connect a wallet and interact with a smart contract within minutes of cloning
-**Current focus:** Phase 4 Complete - Ready for Phase 5 (Documentation & Polish)
+**Current focus:** Phase 5 (Documentation & Polish) - Plan 01 Complete
 
 ## Current Position
 
-Phase: 4 of 5 (Smart Contract Integration) - COMPLETE
-Plan: 3 of 3 in current phase - COMPLETE
-Status: Phase complete - Ready for Phase 5
-Last activity: 2026-01-28 — Completed 04-03-PLAN.md (UI Integration and End-to-End Verification)
+Phase: 5 of 5 (Documentation & Polish)
+Plan: 1 of 3 in current phase
+Status: In progress
+Last activity: 2026-01-29 — Completed 05-01-PLAN.md (README and Getting Started)
 
-Progress: [████████████████] 100% (Phase 4 complete)
+Progress: [██████████████░░] 87% (14 of 16 plans complete)
 
 ## Performance Metrics
 
 **Velocity:**
-- Total plans completed: 13
-- Average duration: 3.1 min
-- Total execution time: 0.67 hours
+- Total plans completed: 14
+- Average duration: 2.9 min
+- Total execution time: 0.70 hours
 
 **By Phase:**
 
@@ -31,10 +31,11 @@ Progress: [████████████████] 100% (Phase 4 compl
 | 02-ui-component-library | 3 | 4.7min | 1.6min |
 | 03-wallet-integration | 3 | 10.0min | 3.3min |
 | 04-smart-contract-integration | 3 | 12.8min | 4.3min |
+| 05-documentation-polish | 1 | 2.0min | 2.0min |
 
 **Recent Trend:**
-- Last 5 plans: 03-03 (7.1min), 04-01 (2.0min), 04-02 (2.3min), 04-03 (8.5min)
-- Trend: Integration plans with human verification take longer as expected
+- Last 5 plans: 04-01 (2.0min), 04-02 (2.3min), 04-03 (8.5min), 05-01 (2.0min)
+- Trend: Documentation plans execute quickly
 
 *Updated after each plan completion*
 
@@ -81,6 +82,9 @@ Recent decisions affecting current work:
 - **Plan 04-03:** CounterDisplay tracks pendingTxId state separately from mutation state for accurate UI feedback
 - **Plan 04-03:** Decrement disabled at value=0 to prevent contract underflow error
 - **Plan 04-03:** Error state shows helpful "Is devnet running?" message for local development
+- **Plan 05-01:** README kept under 60 lines with links to docs/ for details
+- **Plan 05-01:** Link to source files instead of inline code snippets for maintainability
+- **Plan 05-01:** Troubleshooting section included with 5 common issues
 
 ### Pending Todos
 
@@ -109,14 +113,14 @@ None yet.
 - Note: Requires `.env.local` with `NEXT_PUBLIC_DEVNET_HOST=local` for local devnet
 
 **Phase 5:**
-- Documentation phase not yet planned
-- Need to document: getting started, patterns, extending the starter kit
+- Plan 01 complete: README and getting-started.md
+- Remaining: patterns.md (05-02), extending.md (05-03)
 - Consider removing deprecated Chakra components during cleanup
 
 ## Session Continuity
 
-Last session: 2026-01-28 23:45:00 UTC
-Stopped at: Completed Phase 4 (Smart Contract Integration)
+Last session: 2026-01-29 15:49:00 UTC
+Stopped at: Completed 05-01-PLAN.md (README and Getting Started)
 Resume file: None
 
-**Phase 4 Complete:** All smart contract functionality delivered. Ready for Phase 5 (Documentation & Polish).
+**Phase 5 In Progress:** README and getting-started.md complete. Ready for patterns.md (05-02).
