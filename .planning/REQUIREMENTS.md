@@ -33,20 +33,20 @@ Requirements for Hiro Platform Migration. Remove hosted devnet dependency.
 
 | Requirement | Phase | Status |
 |-------------|-------|--------|
-| CODE-01 | TBD | Pending |
-| CODE-02 | TBD | Pending |
-| CODE-03 | TBD | Pending |
-| CODE-04 | TBD | Pending |
-| DOCS-01 | TBD | Pending |
-| DOCS-02 | TBD | Pending |
-| DOCS-03 | TBD | Pending |
-| DOCS-04 | TBD | Pending |
+| CODE-01 | Phase 6 | Pending |
+| CODE-02 | Phase 6 | Pending |
+| CODE-03 | Phase 6 | Pending |
+| CODE-04 | Phase 6 | Pending |
+| DOCS-01 | Phase 6 | Pending |
+| DOCS-02 | Phase 6 | Pending |
+| DOCS-03 | Phase 6 | Pending |
+| DOCS-04 | Phase 6 | Pending |
 
 **Coverage:**
 - v1.1 requirements: 8 total
-- Mapped to phases: 0
-- Unmapped: 8 ⚠️
+- Mapped to phases: 8
+- Unmapped: 0 ✓
 
 ---
 *Requirements defined: 2026-01-29*
-*Last updated: 2026-01-29 after initial definition*
+*Last updated: 2026-01-29 after roadmap creation*
