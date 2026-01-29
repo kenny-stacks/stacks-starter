@@ -9,7 +9,7 @@ Before starting, ensure you have:
 - **Node.js 18+** - [Download](https://nodejs.org)
 - **pnpm** - Install with `npm install -g pnpm` or see [pnpm.io/installation](https://pnpm.io/installation)
 - **Clarinet** - [Installation guide](https://docs.hiro.so/clarinet/getting-started)
-- **Hiro Platform account** - Sign up at [platform.hiro.so](https://platform.hiro.so)
+- **Docker Desktop** - Required for local devnet - [Download](https://www.docker.com/products/docker-desktop)
 - **Basic familiarity** with [React](https://react.dev/learn), [TypeScript](https://www.typescriptlang.org/docs/handbook/), and [Stacks concepts](https://docs.stacks.co/concepts)
 
 ## Installation
@@ -33,33 +33,27 @@ pnpm install
 cp front-end/.env.example front-end/.env
 ```
 
-### 4. Get your Hiro Platform API key
+### 4. Start local devnet
 
-1. Log into [Hiro Platform](https://platform.hiro.so)
-2. Navigate to [Settings > API Keys](https://platform.hiro.so/settings/api-keys)
-3. Copy your API key
+In a terminal, start the local blockchain:
 
-### 5. Add API key to .env
-
-Open `front-end/.env` and set:
-
-```
-NEXT_PUBLIC_PLATFORM_HIRO_API_KEY=your-api-key-here
+```bash
+cd clarity && clarinet devnet start
 ```
 
-### 6. Start Devnet
+Wait for the devnet to initialize. You'll see blocks being mined. Around block 45, the Counter contract will be deployed.
 
-1. In [Hiro Platform](https://platform.hiro.so), open your project
-2. Click **Start Devnet**
-3. Wait for contracts to deploy (visible in the Devnet dashboard around block 45)
+**Tip:** The Stacks Explorer is available at http://localhost:8000 to browse blocks and transactions.
 
-### 7. Start the development server
+### 5. Start the development server
+
+In a new terminal (keep devnet running):
 
 ```bash
 pnpm --filter front-end dev
 ```
 
-### 8. Open the app
+### 6. Open the app
 
 Navigate to [http://localhost:3000](http://localhost:3000)
 
@@ -125,9 +119,10 @@ Find the `increment` function and change `u1` to `u5`:
 
 ### 3. Restart Devnet
 
-Contract changes require redeployment. In Hiro Platform:
-1. Stop Devnet
-2. Start Devnet again
+Contract changes require redeployment:
+
+1. Stop the running devnet (Ctrl+C in the terminal)
+2. Start devnet again: `cd clarity && clarinet devnet start`
 
 The updated contract will be deployed fresh.
 
@@ -144,9 +139,9 @@ The updated contract will be deployed fresh.
 **Cause:** Devnet is not running or contracts haven't deployed yet.
 
 **Fix:**
-1. Check Hiro Platform dashboard - is Devnet running?
-2. Wait for contracts to deploy (check Devnet blocks ~45)
-3. Ensure `NEXT_PUBLIC_PLATFORM_HIRO_API_KEY` is set correctly
+1. Check if devnet is running (`clarinet devnet start` in a terminal)
+2. Wait for contracts to deploy (check terminal output for block ~45)
+3. Check the Stacks Explorer at http://localhost:8000
 
 ### "Transaction failed" error
 
@@ -158,26 +153,18 @@ The updated contract will be deployed fresh.
 
 ### Counter shows error state
 
-**Cause:** Cannot reach Devnet API.
+**Cause:** Cannot reach local devnet API.
 
 **Fix:**
-1. Is Devnet running in Hiro Platform?
-2. Check the Hiro Platform dashboard for API status
-3. Verify your API key is valid
-
-### "API key error" or 401 responses
-
-**Cause:** Missing or invalid Hiro Platform API key.
-
-**Fix:**
-1. Verify `NEXT_PUBLIC_PLATFORM_HIRO_API_KEY` in `front-end/.env`
-2. Check that the API key is active at [platform.hiro.so/settings/api-keys](https://platform.hiro.so/settings/api-keys)
+1. Is Docker running?
+2. Is devnet started? (`clarinet devnet start` in clarity/ folder)
+3. Check terminal output for errors
 
 ### Changes to contract not appearing
 
 **Cause:** Devnet needs restart for contract changes.
 
 **Fix:**
-1. Push your changes to the repository
-2. Stop and restart Devnet in Hiro Platform
+1. Stop devnet (Ctrl+C)
+2. Start devnet again: `clarinet devnet start`
 3. Contract will be redeployed from fresh state
