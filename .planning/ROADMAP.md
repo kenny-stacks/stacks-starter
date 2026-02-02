@@ -103,10 +103,10 @@ Plans:
   1. All existing Vitest tests pass with Clarity 4 configuration
   2. Contract deploys to local devnet and functions correctly (increment/decrement work)
   3. Any new Clarity 4 features adopted have corresponding test coverage
-**Plans**: TBD
+**Plans**: 1 plan
 
 Plans:
-- [ ] 08-01: TBD
+- [ ] 08-01-PLAN.md — Create counter tests and verify devnet deployment
 
 ## Progress
 
@@ -122,7 +122,7 @@ Phases execute in numeric order: 1 -> 2 -> 3 -> 4 -> 5 -> 6 -> 7 -> 8
 | 5. Documentation & Polish | v1 | 3/3 | Complete | 2026-01-29 |
 | 6. Hiro Platform Removal | v1.1 | 2/2 | Complete | 2026-01-29 |
 | 7. Clarity 4 Migration | v1.2 | 2/2 | Complete | 2026-02-02 |
-| 8. Validation | v1.2 | 0/TBD | Not started | - |
+| 8. Validation | v1.2 | 0/1 | Not started | - |
 
 ---
-*Last updated: 2026-02-02 — Phase 7 complete*
+*Last updated: 2026-02-02 — Phase 8 planned*
