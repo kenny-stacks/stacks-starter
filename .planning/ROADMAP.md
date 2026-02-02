@@ -2,14 +2,14 @@
 
 ## Milestones
 
-- ✅ **v1 MVP** - Phases 1-5 (shipped 2026-01-29)
-- ✅ **v1.1 Hiro Platform Migration** - Phase 6 (shipped 2026-01-29)
-- 🚧 **v1.2 Clarity 4 Update** - Phases 7-8 (in progress)
+- **v1 MVP** - Phases 1-5 (shipped 2026-01-29)
+- **v1.1 Hiro Platform Migration** - Phase 6 (shipped 2026-01-29)
+- **v1.2 Clarity 4 Update** - Phases 7-8 (in progress)
 
 ## Phases
 
 <details>
-<summary>✅ v1 MVP (Phases 1-5) - SHIPPED 2026-01-29</summary>
+<summary>v1 MVP (Phases 1-5) - SHIPPED 2026-01-29</summary>
 
 ### Phase 1: Project Setup
 **Goal**: Developers have a working Next.js 15 + Clarity development environment
@@ -59,7 +59,7 @@ Plans:
 </details>
 
 <details>
-<summary>✅ v1.1 Hiro Platform Migration (Phase 6) - SHIPPED 2026-01-29</summary>
+<summary>v1.1 Hiro Platform Migration (Phase 6) - SHIPPED 2026-01-29</summary>
 
 **Milestone Goal:** Remove Hiro Platform hosted devnet dependency and make local Clarinet devnet the only development path.
 
@@ -75,7 +75,7 @@ Plans:
 
 </details>
 
-## 🚧 v1.2 Clarity 4 Update (In Progress)
+## v1.2 Clarity 4 Update (In Progress)
 
 **Milestone Goal:** Update smart contracts to Clarity 4 and adopt modern language idioms.
 
@@ -89,11 +89,11 @@ Plans:
   3. Counter contract compiles and deploys successfully with Clarity 4
   4. Counter contract uses Clarity 4 idioms where they provide clear benefit (or intentionally defers adoption)
   5. Contract behavior is identical to Clarity 3 version (backward compatibility maintained)
-**Plans**: TBD
+**Plans**: 2 plans
 
 Plans:
-- [ ] 07-01: TBD
-- [ ] 07-02: TBD
+- [ ] 07-01-PLAN.md — Update Clarinet.toml configuration for Clarity 4 and verify tooling
+- [ ] 07-02-PLAN.md — Review counter contract for Clarity 4 idioms and verify behavior
 
 ### Phase 8: Validation
 **Goal**: All tests pass and contract works correctly on local devnet with Clarity 4
@@ -111,7 +111,7 @@ Plans:
 ## Progress
 
 **Execution Order:**
-Phases execute in numeric order: 1 → 2 → 3 → 4 → 5 → 6 → 7 → 8
+Phases execute in numeric order: 1 -> 2 -> 3 -> 4 -> 5 -> 6 -> 7 -> 8
 
 | Phase | Milestone | Plans Complete | Status | Completed |
 |-------|-----------|----------------|--------|-----------|
@@ -121,8 +121,8 @@ Phases execute in numeric order: 1 → 2 → 3 → 4 → 5 → 6 → 7 → 8
 | 4. UI Foundation | v1 | 3/3 | Complete | 2026-01-29 |
 | 5. Documentation & Polish | v1 | 3/3 | Complete | 2026-01-29 |
 | 6. Hiro Platform Removal | v1.1 | 2/2 | Complete | 2026-01-29 |
-| 7. Clarity 4 Migration | v1.2 | 0/TBD | Not started | - |
+| 7. Clarity 4 Migration | v1.2 | 0/2 | Planned | - |
 | 8. Validation | v1.2 | 0/TBD | Not started | - |
 
 ---
-*Last updated: 2026-02-02 — v1.2 roadmap created*
+*Last updated: 2026-02-02 — Phase 7 plans created*
