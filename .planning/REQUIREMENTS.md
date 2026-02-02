@@ -54,20 +54,20 @@ Which phases cover which requirements. Updated during roadmap creation.
 
 | Requirement | Phase | Status |
 |-------------|-------|--------|
-| CFG-01 | TBD | Pending |
-| CFG-02 | TBD | Pending |
-| CFG-03 | TBD | Pending |
-| CTR-01 | TBD | Pending |
-| CTR-02 | TBD | Pending |
-| TST-01 | TBD | Pending |
-| TST-02 | TBD | Pending |
-| TST-03 | TBD | Pending |
+| CFG-01 | Phase 7 | Pending |
+| CFG-02 | Phase 7 | Pending |
+| CFG-03 | Phase 7 | Pending |
+| CTR-01 | Phase 7 | Pending |
+| CTR-02 | Phase 7 | Pending |
+| TST-01 | Phase 8 | Pending |
+| TST-02 | Phase 8 | Pending |
+| TST-03 | Phase 8 | Pending |
 
 **Coverage:**
 - v1.2 requirements: 8 total
-- Mapped to phases: 0
-- Unmapped: 8 (awaiting roadmap)
+- Mapped to phases: 8
+- Unmapped: 0 ✓
 
 ---
 *Requirements defined: 2026-02-02*
-*Last updated: 2026-02-02 after initial definition*
+*Last updated: 2026-02-02 after v1.2 roadmap created*
