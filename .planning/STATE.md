@@ -69,7 +69,7 @@ None.
 Last session: 2026-02-02
 Stopped at: Completed 07-02-PLAN.md (Phase 7 complete)
 Resume file: None
-Next action: `/gsd:plan-phase 8` or proceed to Phase 8 documentation update
+Next action: `/gsd:discuss-phase 8`
 
 ## Archives
 

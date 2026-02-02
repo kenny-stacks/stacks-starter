@@ -9,14 +9,14 @@ Requirements for Clarity 4 update. Each maps to roadmap phases.
 
 ### Configuration
 
-- [ ] **CFG-01**: Update clarity_version to 4 in Clarinet.toml
-- [ ] **CFG-02**: Update epoch to 3.3 in Clarinet.toml
-- [ ] **CFG-03**: Verify Clarinet tooling works with new configuration
+- [x] **CFG-01**: Update clarity_version to 4 in Clarinet.toml
+- [x] **CFG-02**: Update epoch to 3.3 in Clarinet.toml
+- [x] **CFG-03**: Verify Clarinet tooling works with new configuration
 
 ### Contract
 
-- [ ] **CTR-01**: Review counter contract for Clarity 4 idiom improvements
-- [ ] **CTR-02**: Apply beneficial idiom changes (if any found)
+- [x] **CTR-01**: Review counter contract for Clarity 4 idiom improvements
+- [x] **CTR-02**: Apply beneficial idiom changes (if any found)
 
 ### Testing
 
@@ -54,11 +54,11 @@ Which phases cover which requirements. Updated during roadmap creation.
 
 | Requirement | Phase | Status |
 |-------------|-------|--------|
-| CFG-01 | Phase 7 | Pending |
-| CFG-02 | Phase 7 | Pending |
-| CFG-03 | Phase 7 | Pending |
-| CTR-01 | Phase 7 | Pending |
-| CTR-02 | Phase 7 | Pending |
+| CFG-01 | Phase 7 | Complete |
+| CFG-02 | Phase 7 | Complete |
+| CFG-03 | Phase 7 | Complete |
+| CTR-01 | Phase 7 | Complete |
+| CTR-02 | Phase 7 | Complete |
 | TST-01 | Phase 8 | Pending |
 | TST-02 | Phase 8 | Pending |
 | TST-03 | Phase 8 | Pending |
@@ -70,4 +70,4 @@ Which phases cover which requirements. Updated during roadmap creation.
 
 ---
 *Requirements defined: 2026-02-02*
-*Last updated: 2026-02-02 after v1.2 roadmap created*
+*Last updated: 2026-02-02 — Phase 7 complete*
