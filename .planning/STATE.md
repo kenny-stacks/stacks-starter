@@ -2,19 +2,19 @@
 
 ## Project Reference
 
-See: .planning/PROJECT.md (updated 2026-02-02)
+See: .planning/PROJECT.md (updated 2026-02-03)
 
 **Core value:** Developers can connect a wallet and interact with a smart contract within minutes of cloning
-**Current focus:** Milestone v1.2 — Clarity 4 Update
+**Current focus:** Ready for next milestone
 
 ## Current Position
 
-Phase: 8 of 8 (Validation)
-Plan: 1 of 1 complete
-Status: **MILESTONE COMPLETE**
-Last activity: 2026-02-03 — Completed 08-01-PLAN.md (counter tests + devnet verification)
+Phase: 8 phases complete across 3 milestones
+Plan: N/A — between milestones
+Status: **v1.2 SHIPPED**
+Last activity: 2026-02-03 — v1.2 milestone archived
 
-Progress: [████████████████████] 100% — 8 of 8 phases complete
+Progress: All milestones through v1.2 complete
 
 ## Performance Metrics
 
@@ -68,12 +68,14 @@ None.
 ## Session Continuity
 
 Last session: 2026-02-03
-Stopped at: v1.2 milestone complete
+Stopped at: v1.2 milestone archived
 Resume file: None
-Next action: `/gsd:complete-milestone` or start v1.3
+Next action: `/gsd:new-milestone` to start v1.3
 
 ## Archives
 
 - `.planning/milestones/v1.1-ROADMAP.md` — v1.1 roadmap archive
 - `.planning/milestones/v1.1-REQUIREMENTS.md` — v1.1 requirements archive
 - `.planning/milestones/v1.1-MILESTONE-AUDIT.md` — v1.1 audit report
+- `.planning/milestones/v1.2-ROADMAP.md` — v1.2 roadmap archive
+- `.planning/milestones/v1.2-REQUIREMENTS.md` — v1.2 requirements archive

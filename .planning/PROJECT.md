@@ -8,14 +8,13 @@ A minimal starter kit for building dApps on the Stacks blockchain. Provides wall
 
 Developers can connect a wallet and interact with a smart contract within minutes of cloning — the architecture just works.
 
-## Current Milestone: v1.2 Clarity 4 Update
+## Current State
 
-**Goal:** Update smart contracts to Clarity 4 and adopt modern language idioms.
+**Version:** v1.2 shipped 2026-02-03
 
-**Target features:**
-- Clarity 4 version specifier across all contracts
-- Counter contract refactored to use Clarity 4 idioms where beneficial
-- Tests updated for Clarity 4 compatibility
+All contracts running on Clarity 4 (clarity_version=4, epoch=3.3).
+16 tests passing (11 fundraising + 5 counter).
+Devnet deployment verified.
 
 ## Current State
 
@@ -56,12 +55,13 @@ Developers can connect a wallet and interact with a smart contract within minute
 - ✓ Simplified environment variables (no platform keys) — v1.1
 - ✓ Docker as documented prerequisite — v1.1
 - ✓ Clarinet devnet workflow in all documentation — v1.1
+- ✓ Clarity 4 version specifier in all contracts — v1.2
+- ✓ Counter contract assessed for Clarity 4 idioms (deferred - too minimal) — v1.2
+- ✓ Contract tests pass with Clarity 4 (16 tests) — v1.2
 
 ### Active
 
-- [x] Clarity 4 version specifier in all contracts — v1.2
-- [x] Counter contract uses Clarity 4 idioms where beneficial — v1.2 (deferred - contract too minimal)
-- [x] Contract tests pass with Clarity 4 — v1.2
+(None — start next milestone to define requirements)
 
 ### Out of Scope
 
@@ -96,4 +96,4 @@ Developers can connect a wallet and interact with a smart contract within minute
 | Docker as prerequisite | Required for Clarinet devnet, worth the trade-off | ✓ Good — industry standard |
 
 ---
-*Last updated: 2026-02-02 after v1.2 milestone started*
+*Last updated: 2026-02-03 after v1.2 milestone shipped*

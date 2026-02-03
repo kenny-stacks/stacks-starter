@@ -1,5 +1,29 @@
 # Project Milestones: Stacks Starter
 
+## v1.2 Clarity 4 Update (Shipped: 2026-02-03)
+
+**Delivered:** Updated smart contracts to Clarity 4 with config migration and comprehensive test coverage.
+
+**Phases completed:** 7-8 (3 plans total)
+
+**Key accomplishments:**
+- Updated Clarinet.toml for Clarity 4 (clarity_version=4, epoch=3.3)
+- Assessed counter contract for Clarity 4 idioms (deferred - too minimal to benefit)
+- Added counter contract test coverage (5 new tests, 16 total)
+- Verified devnet deployment works correctly with Clarity 4
+
+**Stats:**
+- 16 files modified
+- +1,233 lines
+- 2 phases, 3 plans
+- 2 days from start to ship
+
+**Git range:** `5fd6694` → `4ef09c5`
+
+**What's next:** Project ready for v1.3. Future enhancements could include NFT/token contract examples, GitHub Actions CI, or deployment guides.
+
+---
+
 ## v1.1 Hiro Platform Migration (Shipped: 2026-01-29)
 
 **Delivered:** Removed Hiro Platform hosted devnet dependency, simplified to local Clarinet devnet only.

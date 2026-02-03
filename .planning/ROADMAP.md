@@ -4,7 +4,7 @@
 
 - **v1 MVP** - Phases 1-5 (shipped 2026-01-29)
 - **v1.1 Hiro Platform Migration** - Phase 6 (shipped 2026-01-29)
-- **v1.2 Clarity 4 Update** - Phases 7-8 (in progress)
+- **v1.2 Clarity 4 Update** - Phases 7-8 (shipped 2026-02-03)
 
 ## Phases
 
@@ -75,20 +75,14 @@ Plans:
 
 </details>
 
-## v1.2 Clarity 4 Update (In Progress)
+<details>
+<summary>v1.2 Clarity 4 Update (Phases 7-8) - SHIPPED 2026-02-03</summary>
 
 **Milestone Goal:** Update smart contracts to Clarity 4 and adopt modern language idioms.
 
 ### Phase 7: Clarity 4 Migration
 **Goal**: Counter contract runs on Clarity 4 with modern idioms applied where beneficial
 **Depends on**: Phase 6 (v1.1 shipped)
-**Requirements**: CFG-01, CFG-02, CFG-03, CTR-01, CTR-02
-**Success Criteria** (what must be TRUE):
-  1. Clarinet.toml specifies clarity_version = 4 and epoch = 3.3
-  2. Clarinet tooling (check, test, devnet) works with Clarity 4 configuration
-  3. Counter contract compiles and deploys successfully with Clarity 4
-  4. Counter contract uses Clarity 4 idioms where they provide clear benefit (or intentionally defers adoption)
-  5. Contract behavior is identical to Clarity 3 version (backward compatibility maintained)
 **Plans**: 2 plans
 
 Plans:
@@ -98,15 +92,12 @@ Plans:
 ### Phase 8: Validation
 **Goal**: All tests pass and contract works correctly on local devnet with Clarity 4
 **Depends on**: Phase 7
-**Requirements**: TST-01, TST-02, TST-03
-**Success Criteria** (what must be TRUE):
-  1. All existing Vitest tests pass with Clarity 4 configuration
-  2. Contract deploys to local devnet and functions correctly (increment/decrement work)
-  3. Any new Clarity 4 features adopted have corresponding test coverage
 **Plans**: 1 plan
 
 Plans:
 - [x] 08-01-PLAN.md — Create counter tests and verify devnet deployment
+
+</details>
 
 ## Progress
 
