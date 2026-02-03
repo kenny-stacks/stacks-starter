@@ -59,9 +59,9 @@ Developers can connect a wallet and interact with a smart contract within minute
 
 ### Active
 
-- [ ] Clarity 4 version specifier in all contracts
-- [ ] Counter contract uses Clarity 4 idioms where beneficial
-- [ ] Contract tests pass with Clarity 4
+- [x] Clarity 4 version specifier in all contracts — v1.2
+- [x] Counter contract uses Clarity 4 idioms where beneficial — v1.2 (deferred - contract too minimal)
+- [x] Contract tests pass with Clarity 4 — v1.2
 
 ### Out of Scope
 

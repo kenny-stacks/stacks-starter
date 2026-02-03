@@ -106,7 +106,7 @@ Plans:
 **Plans**: 1 plan
 
 Plans:
-- [ ] 08-01-PLAN.md — Create counter tests and verify devnet deployment
+- [x] 08-01-PLAN.md — Create counter tests and verify devnet deployment
 
 ## Progress
 
@@ -122,7 +122,7 @@ Phases execute in numeric order: 1 -> 2 -> 3 -> 4 -> 5 -> 6 -> 7 -> 8
 | 5. Documentation & Polish | v1 | 3/3 | Complete | 2026-01-29 |
 | 6. Hiro Platform Removal | v1.1 | 2/2 | Complete | 2026-01-29 |
 | 7. Clarity 4 Migration | v1.2 | 2/2 | Complete | 2026-02-02 |
-| 8. Validation | v1.2 | 0/1 | Not started | - |
+| 8. Validation | v1.2 | 1/1 | Complete | 2026-02-03 |
 
 ---
-*Last updated: 2026-02-02 — Phase 8 planned*
+*Last updated: 2026-02-03 — v1.2 milestone complete*
