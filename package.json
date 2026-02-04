@@ -1,5 +1,5 @@
 {
-  "name": "fundraising-dapp",
+  "name": "stacks-starter",
   "private": true,
   "workspaces": [
     "clarity",
