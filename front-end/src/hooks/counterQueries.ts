@@ -1,29 +1,46 @@
 import { useQuery, useMutation, useQueryClient, UseQueryResult } from "@tanstack/react-query"
-import { getApi, getStacksUrl } from "@/lib/stacks-api"
+import { getStacksUrl } from "@/lib/stacks-api"
 import { cvToJSON, hexToCV, PostConditionMode } from "@stacks/transactions"
 import { COUNTER_CONTRACT } from "@/constants/contracts"
 import { useWallet } from "@/components/providers/wallet-provider"
 import { executeContractCall, openContractCall } from "@/lib/contract-utils"
 import { toast } from "sonner"
 
-export const useCounterValue = (): UseQueryResult<number> => {
-  const api = getApi(getStacksUrl()).smartContractsApi
+interface ReadOnlyResponse {
+  okay: boolean
+  result?: string
+  cause?: string
+}
 
+async function callReadOnlyFunction(
+  contractAddress: string,
+  contractName: string,
+  functionName: string,
+  sender: string,
+  args: string[] = []
+): Promise<ReadOnlyResponse> {
+  const url = `${getStacksUrl()}/v2/contracts/call-read/${contractAddress}/${contractName}/${functionName}`
+  const response = await fetch(url, {
+    method: "POST",
+    headers: { "Content-Type": "application/json" },
+    body: JSON.stringify({ sender, arguments: args }),
+  })
+  return response.json()
+}
+
+export const useCounterValue = (): UseQueryResult<number> => {
   return useQuery<number>({
     queryKey: ["counterValue"],
     queryFn: async () => {
-      const response = await api.callReadOnlyFunction({
-        contractAddress: COUNTER_CONTRACT.address || "",
-        contractName: COUNTER_CONTRACT.name,
-        functionName: "get-count",
-        readOnlyFunctionArgs: {
-          sender: COUNTER_CONTRACT.address || "",
-          arguments: [],
-        },
-      })
+      const data = await callReadOnlyFunction(
+        COUNTER_CONTRACT.address || "",
+        COUNTER_CONTRACT.name,
+        "get-count",
+        COUNTER_CONTRACT.address || ""
+      )
 
-      if (response?.okay && response?.result) {
-        const result = cvToJSON(hexToCV(response.result))
+      if (data?.okay && data?.result) {
+        const result = cvToJSON(hexToCV(data.result))
         // get-count returns (ok uint), so check success and extract value
         if (result?.success) {
           return parseInt(result.value.value, 10)
@@ -31,7 +48,7 @@ export const useCounterValue = (): UseQueryResult<number> => {
           throw new Error("Contract returned error response")
         }
       } else {
-        throw new Error(response?.cause || "Error fetching counter value")
+        throw new Error(data?.cause || "Error fetching counter value")
       }
     },
     refetchInterval: 10000, // Poll every 10 seconds

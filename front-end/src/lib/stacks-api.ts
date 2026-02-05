@@ -1,20 +1,5 @@
 import { DEVNET_STACKS_BLOCKCHAIN_API_URL } from "@/constants/devnet";
-import {
-  Configuration,
-  SmartContractsApi,
-  AccountsApi,
-  InfoApi,
-  TransactionsApi,
-  MicroblocksApi,
-  BlocksApi,
-  FaucetsApi,
-  FeesApi,
-  SearchApi,
-  RosettaApi,
-  FungibleTokensApi,
-  NonFungibleTokensApi,
-  ConfigurationParameters,
-} from "@stacks/blockchain-api-client";
+import { createClient } from "@stacks/blockchain-api-client";
 import { STACKS_TESTNET, STACKS_DEVNET, STACKS_MAINNET } from "@stacks/network";
 import { Network } from "./contract-utils";
 
@@ -47,50 +32,21 @@ export function getStacksNetwork() {
   }
 }
 
-function createConfig(
-  stacksApiUrl: string,
-  headers?: HTTPHeaders
-): Configuration {
-  const configParams: ConfigurationParameters = {
-    basePath: stacksApiUrl,
-    headers,
-    fetchApi: fetch,
-  };
-  return new Configuration(configParams);
-}
+export type StacksApiClient = ReturnType<typeof createClient>;
 
-export function apiClients(config: Configuration) {
-  const smartContractsApi = new SmartContractsApi(config);
-  const accountsApi = new AccountsApi(config);
-  const infoApi = new InfoApi(config);
-  const transactionsApi = new TransactionsApi(config);
-  const microblocksApi = new MicroblocksApi(config);
-  const blocksApi = new BlocksApi(config);
-  const faucetsApi = new FaucetsApi(config);
-  const feesApi = new FeesApi(config);
-  const searchApi = new SearchApi(config);
-  const rosettaApi = new RosettaApi(config);
-  const fungibleTokensApi = new FungibleTokensApi(config);
-  const nonFungibleTokensApi = new NonFungibleTokensApi(config);
+export const getApi = (stacksApiUrl: string, headers?: HTTPHeaders): StacksApiClient => {
+  const client = createClient({ baseUrl: stacksApiUrl });
 
-  return {
-    smartContractsApi,
-    accountsApi,
-    infoApi,
-    transactionsApi,
-    microblocksApi,
-    blocksApi,
-    faucetsApi,
-    feesApi,
-    searchApi,
-    rosettaApi,
-    fungibleTokensApi,
-    nonFungibleTokensApi,
-    config,
-  };
-}
+  if (headers) {
+    client.use({
+      onRequest({ request }) {
+        Object.entries(headers).forEach(([key, value]) => {
+          request.headers.set(key, value);
+        });
+        return request;
+      },
+    });
+  }
 
-export const getApi = (stacksApiUrl: string, headers?: HTTPHeaders) => {
-  const config = createConfig(stacksApiUrl, headers);
-  return apiClients(config);
+  return client;
 };

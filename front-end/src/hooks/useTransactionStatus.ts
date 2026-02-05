@@ -11,14 +11,22 @@ interface TransactionStatusResult {
 }
 
 export const useTransactionStatus = (txid: string | null) => {
-  const api = getApi(getStacksUrl()).transactionsApi
+  const client = getApi(getStacksUrl())
 
   return useQuery<TransactionStatusResult>({
     queryKey: ["transactionStatus", txid],
     queryFn: async () => {
       if (!txid) throw new Error("No transaction ID")
 
-      const tx = await api.getTransactionById({ txId: txid }) as {
+      const { data, error } = await client.GET("/extended/v1/tx/{tx_id}", {
+        params: { path: { tx_id: txid } },
+      })
+
+      if (error) {
+        throw new Error("Error fetching transaction")
+      }
+
+      const tx = data as {
         tx_status: TxStatus
         block_height?: number
       }
