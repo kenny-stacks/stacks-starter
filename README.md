@@ -14,6 +14,10 @@ Working with Claude Code? Check out the [Stacks Claude Code Plugin](https://gith
 
 ## Quick Start
 
+There are two primary folders in the starter kit, `clarity` and `front-end`. `clarity` is your Clarinet smart contract structure, and `front-end` contains all of your front end files. Make sure you run the relevant commands to get everything started in the right folders.
+
+Alternatively, if you are using Claude Code, you can install the plugin (linked above) which has a built-in command to get your dev server started in the background. This is extremely helpful because it allows Clade Code to have visibility into your Clarinet devnet and your frontend.
+
 ```bash
 cd front-end
 pnpm install
