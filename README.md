@@ -6,21 +6,24 @@ A minimal starter kit for building dApps on Stacks. Connect a wallet, interact w
 
 - [Node.js 18+](https://nodejs.org)
 - [pnpm](https://pnpm.io/installation)
-- [Clarinet](https://docs.hiro.so/clarinet) (for local contract development)
+- [Clarinet](https://docs.stacks.co/clarinet/overview) (for local contract development)
 - [Docker Desktop](https://www.docker.com/products/docker-desktop) (required for local devnet)
 - Basic knowledge of [React](https://react.dev), [TypeScript](https://www.typescriptlang.org/docs/), and [Stacks](https://docs.stacks.co)
+
+Working with Claude Code? Check out the [Stacks Claude Code Plugin](https://github.com/kenny-stacks/stacks-claude-plugin).
 
 ## Quick Start
 
 ```bash
+cd front-end
 pnpm install
-cp front-end/.env.example front-end/.env
+cp .env.example .env
 ```
 
 Start local devnet (requires Docker):
 
 ```bash
-cd clarity && clarinet devnet start
+cd ../clarity && clarinet devnet start
 ```
 
 Wait for contracts to deploy (watch for block ~45), then in a new terminal:
