@@ -5,10 +5,25 @@ authors = []
 telemetry = false
 cache_dir = './.cache'
 
+[[project.requirements]]
+contract_id = 'SM3VDXK3WZZSA84XXFKAFAF15NNZX32CTSG82JFQ4.sbtc-token'
 [contracts.counter]
 path = 'contracts/counter.clar'
 clarity_version = 4
-epoch = 3.3
-
+epoch = '3.3'
 [repl.analysis]
-passes = []
+passes = ['call_checker']
+
+[repl.analysis.lint_groups]
+
+[repl.analysis.lints]
+
+[repl.analysis.check_checker]
+strict = false
+trusted_sender = false
+trusted_caller = false
+callee_filter = false
+
+[repl.remote_data]
+enabled = false
+api_url = 'https://api.hiro.so'
